@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>recurseTree (Favorites)</title>
+<link rel=StyleSheet href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body bgcolor="white">
+<pre><span class="cmt"># File favorites.rb, line 58</span>
+        <span class="kw">def</span> recurseTree(dir, pid=0)
+                <span class="kw">if</span>(!FileTest.directory?(dir))
+                        print(&quot;'#{dir}' is not a directory\n&quot;)
+                        <span class="kw">return</span> <span class="kw">false</span>
+                <span class="kw">end</span>   
+                
+                Dir.chdir(dir)
+                Dir.entries(<span class="str">&quot;.&quot;</span>).each{|f|
+                        <span class="kw">next</span> <span class="kw">if</span>(f==<span class="str">&quot;.&quot;</span> || f==<span class="str">&quot;..&quot;</span>)
+                        
+                        subdir = dir + <span class="str">&quot;/&quot;</span> + f                       
+                        <span class="kw">if</span>(File.directory?(subdir))
+                                @idcount += 1
+                                tmpdir = (match=Re_dir.match(subdir))?match[1]:<span class="str">''</span>
+                                @favorites.push(Node.new(<span class="kw">true</span>, @idcount, pid, <span class="str">''</span>, tmpdir, <span class="str">''</span>, <span class="str">''</span>))
+                                recurseTree(subdir, @idcount)
+                        <span class="kw">end</span>
+                        
+                        <span class="kw">if</span>(title = Re_title.match(f))
+                                linkContent = File.new(f).read
+                                <span class="kw">if</span>(url = Re_url.match(linkContent))
+                                        @idcount += 1
+                                        iconUrl = (match=Re_iconUrl.match(linkContent))?match[1]:<span class="str">''</span>
+                                        @favorites.push(Node.new(<span class="kw">false</span>, @idcount, pid, <span class="str">''</span>, title[1], url[1], iconUrl))
+                                <span class="kw">end</span>
+                        <span class="kw">end</span>
+                }
+                Dir.chdir(<span class="str">&quot;..&quot;</span>)
+        <span class="kw">end</span></pre>
+</body>
+</html>

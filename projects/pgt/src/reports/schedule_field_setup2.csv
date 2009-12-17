@@ -1,0 +1,19 @@
+Day,Slot,bane 1,bane 2,bane 3,bane 4,bane 5,bane 6,bane 7,bane 8
+
+1,13.00-14.00,b9394:mal_1-nor_1,b9901:kop_1-nor_2,g9596:kop_1-nor_1,b9596:kop_2-nor_1,g9798:sto_1-nor_1,b9798:kop_1-nor_1,g9394:mal_1-nor_1,b9901:sto_1-nor_1
+1,14.00-15.00,g9596:sto_1-sto_2,b9596:sto_1-sto_2,g9798:got_1-got_2,b9798:sto_1-got_1,b9901:hel_1-got_1
+1,15.00-16.00,b9394:kop_1-nor_1,g9394:kop_1-nor_1,b9596:kop_1-nor_1,b9901:kop_1-nor_1,b9901:nor_2-sto_1
+
+2,09.00-10.00,b9394:kop_1-mal_1,g9596:kop_1-sto_2,g9798:sto_1-got_2,b9798:kop_1-got_1,g9394:kop_1-mal_1,g9596:nor_1-sto_1
+2,10.00-11.00,b9596:kop_2-sto_1,g9798:nor_1-got_1,b9798:nor_1-sto_1,b9901:nor_2-got_1,b9596:kop_1-sto_2,b9901:sto_1-hel_1
+2,11.00-12.00,g9596:kop_1-sto_1,g9596:sto_2-nor_1
+2,13.00-14.00,g9798:sto_1-got_1,b9798:kop_1-sto_1,b9596:nor_1-sto_1,g9798:got_2-nor_1,b9798:got_1-nor_1,b9901:kop_1-got_1
+2,14.00-15.00,b9901:nor_1-hel_1,b9596:sto_2-kop_2
+2,15.00-16.00,b9596:kop_1-sto_1,b9901:got_1-sto_1
+2,16.00-17.00,b9901:kop_1-hel_1,b9596:sto_2-nor_1,b9901:nor_1-nor_2
+
+3,09.00-10.00,b9596:kop_1-kop_2,b9901:kop_1-sto_1,b9901:hel_1-nor_2,b9901:got_1-nor_1
+3,10.00-11.00
+3,11.00-12.00
+3,12.00-13.00
+

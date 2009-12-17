@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project>
+  <extend>../project.xml</extend>
+  <name>COS Order Wrapper</name>
+  <artifactId>cos-wrapper-order</artifactId>
+  <type>ejb</type>
+
+  <dependencies>
+    <dependency>
+      <groupId>gnu-regexp</groupId>
+      <artifactId>gnu-regexp</artifactId>
+      <version>1.1.4</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>${basedir}/src/java</sourceDirectory>
+    <unitTestSourceDirectory>${basedir}/test/java</unitTestSourceDirectory>
+    <unitTest>
+      <resources>
+        <resource>
+          <directory>${basedir}/test/java</directory>
+          <includes>
+            <include>**/*.xml</include>
+            <include>**/*.xsl</include> 
+            <include>**/*.properties</include> 
+          </includes>
+        </resource>
+      </resources>
+    </unitTest>
+  </build>
+</project>

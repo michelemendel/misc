@@ -1,0 +1,38 @@
+opengl拡張モジュール
+
+このモジュールはrubyからOpenGL+glutを使用するためのモジュールです．
+インプリメントはまだ不完全のため，つかえない関数やバグが多数存在する
+ことを前提としてお使いください．
+
+このモジュールはruby-1.4.3で動作確認しています．なお環境は
+    irix6.5+glut-3.7
+で動作を確認しています．OpenGL(Mesa)+glutが必要ですので別途入手
+してください．
+
+インストール方法
+ opengl.0.3.tgzをrubyディレクトリにコピーして以下のコマンドを実行し
+てください．
+        gzip -dc opengl.0.3.tgz | tar xvf -
+	cd ruby-gl
+	ruby extconf.rb
+	make
+
+使用方法
+ require "opengl" でGL,GLU,require "glut"でGLUTの各モジュールが使用
+できます．
+ 詳しくはsampleの下の各サンプルソースを参考にしてください．
+
+注意
+ もし、サンプルを動かしてみたとき、Xのエラーでよくアプリケーションが
+終了する場合は、extconf.rbの中のhave_library("pthread", "pthread_create")
+をコメントアウトした後、再度モジュールを作成しなおしてみてください。
+
+バグを発見されましたり，モジュールに関しての御意見等ございましたら
+        rubyメーリングリスト(ruby-list@netlab.co.jp)
+        kusano@kke.co.jp
+        yoshi@giganet.net
+のどれかにメールして頂けると助かります．
+
+version 0.2から0.3にversion upのほとんどの作業はyashi@yashi.comさんが
+行なわれました。謹んで、お礼申し上げます。
+

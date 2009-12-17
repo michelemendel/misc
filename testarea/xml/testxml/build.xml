@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE DOCUMENT [
+    <!ENTITY build_codegen       SYSTEM "file:./build_codegen.xml">
+    <!ENTITY build_wrapper       SYSTEM "file:./build_wrapper.xml">
+    <!ENTITY build_ejb           SYSTEM "file:./build_ejb.xml">
+    <!ENTITY build_compile       SYSTEM "file:./build_compile.xml">
+    <!ENTITY build_config        SYSTEM "file:./build_config.xml">
+    <!ENTITY build_doc           SYSTEM "file:./build_doc.xml">
+    <!ENTITY build_pvcs          SYSTEM "file:./build_pvcs.xml">
+    <!ENTITY build_develop       SYSTEM "file:./build_develop.xml">
+    <!ENTITY build_aspects       SYSTEM "file:./build_aspects.xml">
+    <!ENTITY build_testdb        SYSTEM "file:./build_testdb.xml">
+    <!ENTITY build_weblogic      SYSTEM "file:./build_weblogic.xml">
+    <!ENTITY build_junit         SYSTEM "file:./build_junit.xml">
+    <!ENTITY build_web_service   SYSTEM "file:./build_web_service.xml">
+    <!ENTITY build_webapps       SYSTEM "file:./build_webapps.xml">
+    <!ENTITY build_xmlbinding    SYSTEM "file:./build_xmlbinding.xml">
+]>
+
+<project name="cosport" default="compile" basedir=".">
+
+<!-- ======================================================================= -->
+<!--   MAIN BUILD FILE FOR COSPORT BUILD SCRIPT                              -->
+<!--   $Log: build.xml  $								     -->
+<!--   Revision 1.57 2003/12/04 14:46:31CET t518061 								     -->
+<!--   Renamed update_deploy to gen_deploy. It is what it's really doing.								     -->
+<!--   Revision 1.56 2003/12/02 12:50:13CET t518061 								     -->
+<!--   The rebuild target no longer includes a pack_release.								     -->
+<!--   The update target no longer includes gen_deployables and deploy.								     -->
+<!--   The new update_deploy includes gen_deployables and deploy.								     -->
+<!--   Revision 1.55 2003/10/14 13:35:12CEST aaimkr 								     -->
+<!--   CR#6569								     -->
+<!-- ======================================================================= -->
+
+<!-- ======================================================================= -->
+<!-- Env vars prefix                                                         -->
+<!-- ======================================================================= -->
+  <property environment="env"/>
+
+<!-- ======================================================================= -->
+<!-- Define ant vars from env vars                                           -->
+<!-- ======================================================================= -->
+  <property name="BUILDXMLFILE" value="${env.BUILDXMLFILE}"/>
+  <property name="PROJECT_DIR" value="${env.PROJECT_DIR}"/>
+  <property name="BUILDXMLFILE" value="${env.BUILDXMLFILE}"/>
+  <property name="ANT_HOME" value="${env.ANT_HOME}"/>
+  <property name="JS_HOME" value="${env.JS_HOME}"/>
+  <property name="SYBASE_HOME" value="${env.SYBASE}"/>
+
+  <property name="SOURCEPATH" value="${env.SOURCEPATH}"/>
+  <property name="SOURCE_DIR" value="${env.SOURCE_DIR}"/>
+  <property name="WEB_SOURCE_DIR" value="${env.WEB_SOURCE_DIR}"/>
+  <property name="GEN_SOURCE_DIR" value="${env.GEN_SOURCE_DIR}"/>
+  <property name="DOCS_DIR" value="${env.DOCS_DIR}"/>
+  <property name="DIST_DIR" value="${env.DIST_DIR}"/>
+  <property name="ETC_DIR" value="${env.ETC_DIR}"/>
+  <property name="SOURCE_DIR" value="${env.SOURCE_DIR}"/>
+  <property name="WL_PASSWORD" value="${env.WL_PASSWORD}"/>
+  <property name="WL_USER" value="${env.WL_USER}"/>
+  <property name="WL_URL" value="${env.WL_URL}"/>
+  <property name="BUILD_SEQUENCE_FILE" value="${env.BUILD_SEQUENCE_FILE}"/>
+  <property name="RELEASE_FILE_PREFIX" value="${env.RELEASE_FILE_PREFIX}"/>
+  <property name="SOURCE_FILE_PREFIX" value="${env.SOURCE_FILE_PREFIX}"/>
+  <property name="DOC_FILE_PREFIX" value="${env.DOC_FILE_PREFIX}"/>
+  <property name="SQL_PROCS_FILE_PREFIX" value="${env.SQL_PROCS_FILE_PREFIX}"/>
+  <property name="CLASSES_DIR" value="${env.CLASSES_DIR}"/>
+  <property name="SOURCEPATH" value="${env.SOURCEPATH}"/>
+  <property name="WL_CONFIG_DIR" value="${env.WL_CONFIG_DIR}"/>
+  <property name="EJB_BEAN_OUTPUT_DIR" value="${env.EJB_BEAN_OUTPUT_DIR}"/>
+  <property name="INTERFACE_TEMPLATE" value="${env.INTERFACE_TEMPLATE}"/>
+  <property name="CODEGEN_TEMPLATE_DIR" value="${env.CODEGEN_TEMPLATE_DIR}"/>
+  <property name="IONA_BIN_DIR" value="${env.IONA_BIN_DIR}"/>
+  <property name="IONA_GEN_DIR" value="${env.IONA_GEN_DIR}"/>
+  <property name="GEN_XML_SOURCE_DIR_TEMP" value="${env.GEN_XML_SOURCE_DIR_TEMP}"/>
+  <property Name="DOMAIN_NAME" Value="${env.DOMAIN_NAME}"/>
+  <property name="UNIX_SERVER" value="${env.UNIX_SERVER}"/>
+  <property name="UNIX_USER" value="${env.UNIX_USER}"/>
+  <property name="UNIX_PASSWD" value="${env.UNIX_PASSWD}"/>
+  <property name="CLIENT_CLASSES" value="${env.CLIENT_CLASSES}"/>
+  <property name="DAEMON_CLASSES" value="${env.DAEMON_CLASSES}"/>
+  <property name="WRAPPER_GENERATOR_INI" value="${env.WRAPPER_GENERATOR_INI}"/>
+  <property name="SESSION_BEAN_XML" value="${env.SESSION_BEAN_XML}"/>
+  <property name="MESSAGE_BEAN_XML" value="${env.MESSAGE_BEAN_XML}"/>
+  <property name="EJB_DESCRIPTOR_TEMPLATE" value="${env.EJB_DESCRIPTOR_TEMPLATE}"/>
+  <property name="EJB_WL_DESCRIPTOR_TEMPLATE" value="${env.EJB_WL_DESCRIPTOR_TEMPLATE}"/>
+  <property name="EJB_PROXY_TEMPLATE" value="${env.EJB_PROXY_TEMPLATE}"/>
+  <property name="EJB_INTERFACE_TEMPLATE" value="${env.EJB_INTERFACE_TEMPLATE}"/>
+  <property name="EJB_HOME_TEMPLATE" value="${env.EJB_HOME_TEMPLATE}"/>
+  <property name="EJB_FACTORY_TEMPLATE" value="${env.EJB_FACTORY_TEMPLATE}"/>
+  <property name="COMPILE.DEBUG" value="true"/>
+  <property name="COMPILE.OPTIMIZE" value="true"/>
+  <property name="SESSION_BEAN_PROXY_TEMPLATE"
+            value="${env.SESSION_BEAN_PROXY_TEMPLATE}"/>
+  <property name="SESSION_BEAN_REMOTE_INTERFACE_TEMPLATE"
+            value="${env.SESSION_BEAN_REMOTE_INTERFACE_TEMPLATE}"/>
+  <property name="SESSION_BEAN_HOME_INTERFACE_TEMPLATE"
+            value="${env.SESSION_BEAN_HOME_INTERFACE_TEMPLATE}"/>
+  <property name="SESSION_BEAN_IMPL_INTERFACE_TEMPLATE"
+            value="${env.SESSION_BEAN_IMPL_INTERFACE_TEMPLATE}"/>
+  <property name="SESSION_BEAN_IMPL_INTERFACE_TEMPLATE_JAVA"
+            value="${env.SESSION_BEAN_IMPL_INTERFACE_TEMPLATE_JAVA}"/>
+  <property name="SESSION_BEAN_DESCRIPTOR_TEMPLATE"
+            value="${env.SESSION_BEAN_DESCRIPTOR_TEMPLATE}"/>
+  <property name="SESSION_BEAN_DESCRIPTOR_SECURITY_TEMPLATE"
+            value="${env.SESSION_BEAN_DESCRIPTOR_SECURITY_TEMPLATE}"/>
+  <property name="SESSION_BEAN_WL_DESCRIPTOR_TEMPLATE"
+            value="${env.SESSION_BEAN_WL_DESCRIPTOR_TEMPLATE}"/>
+  <property name="SESSION_BEAN_WL_DESCRIPTOR_SECURITY_TEMPLATE"
+            value="${env.SESSION_BEAN_WL_DESCRIPTOR_SECURITY_TEMPLATE}"/>
+  <property name="SERVICE_FACTORY_TEMPLATE"
+            value="${env.SERVICE_FACTORY_TEMPLATE}"/>
+  <property name="WRAPPER_FACTORY_TEMPLATE"
+            value="${env.WRAPPER_FACTORY_TEMPLATE}"/>
+  <property name="STRUCT_TEMPLATE"
+            value="${env.STRUCT_TEMPLATE}"/>
+  <property name="IONA_STRUCT_TEMPLATE"
+            value="${env.IONA_STRUCT_TEMPLATE}"/>
+  <property name="SESSION_BEAN_IMPL_INTERFACE_TEMPLATE"
+            value="${env.SESSION_BEAN_IMPL_INTERFACE_TEMPLATE}"/>
+  <property name="PACKAGE_TO_PUBLIC_TEMPLATE"
+            value="${env.PACKAGE_TO_PUBLIC_TEMPLATE}"/>
+  <property name="CLIENT_PROXY_TEMPLATE"
+            value="${env.CLIENT_PROXY_TEMPLATE}"/>
+  <property name="WRAPPER_CLIENT_PROXY_TEMPLATE"
+            value="${env.WRAPPER_CLIENT_PROXY_TEMPLATE}"/>
+  <property name="WITH_TESTROLES" value="${env.WITH_TESTROLES}"/>
+  <property name="WITHOUT_TESTROLES" value="${env.WITHOUT_TESTROLES}"/>
+  <property name="TEST_DIR" value="${env.TEST_DIR}"/>
+  <property name="INT_TEST_DIR" value="${env.INT_TEST_DIR}"/>
+
+  <!-- ======================================================================= -->
+  <!-- Misc                                                                    -->
+  <!-- ======================================================================= -->
+
+  <!-- Base elements in classpath -->
+  <path id="base.class.path">
+    <pathelement path="${env.BASE_CLASSPATH}"/>
+  </path>
+
+  <!-- The project class path -->
+  <path id="project.class.path">
+    <pathelement PATH="${env.PROJECT_CLASSPATH}"/>
+  </path>
+
+  <property name="JAVA_COMPILER" value="modern"/> <!-- jikes or modern -->
+  <property name="build.compiler" value="${JAVA_COMPILER}"/>
+  <property name="build.compiler.emacs" value="on"/>
+  <property name="MANIFEST" value="${env.DIST_DIR}/manifest.mf"/>
+
+  <property file="version.properties"/>
+  <property name="VERSION" value="${VERSION.MAJOR}.${VERSION.MINOR}"/>
+
+  <!-- ======================================================================= -->
+  <!--                                                                         -->
+  <!-- CosPort project specific target definitions                             -->
+  <!--                                                                         -->
+  <!-- ======================================================================= -->
+  <taskdef name="ftp"
+           classname="org.apache.tools.ant.taskdefs.optional.net.FTP"/>
+  <taskdef name="telnet"
+           classname="org.apache.tools.ant.taskdefs.optional.net.TelnetTask"/>
+  <taskdef name="jlink"
+           classname="org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask"/>
+
+  &build_codegen;
+  &build_wrapper;
+  &build_ejb;
+  &build_compile;
+  &build_config;
+  &build_doc;
+  &build_pvcs;
+  &build_develop;
+  &build_aspects;
+  &build_testdb;
+  &build_weblogic;
+  &build_junit;
+  &build_web_service;
+  &build_webapps;
+  &build_xmlbinding;
+
+
+  <!-- =================================================================== -->
+  <!-- Prepares the build directory (called from almost any target)        -->
+  <!-- =================================================================== -->
+  <target name="prepare">
+    <tstamp>
+        <format property="NOW" pattern="dd/MM-yyyy HH:mm"/>
+    </tstamp>
+    <echo message="Prepare build: ${PROJECT_DIR}" />
+    <mkdir dir="${CLASSES_DIR}"/>
+    <mkdir dir="${SOURCE_DIR}"/>
+    <mkdir dir="${GEN_SOURCE_DIR}"/>
+    <mkdir dir="${PROJECT_DIR}/test"/>
+    <mkdir dir="${WEB_SOURCE_DIR}"/>
+    <mkdir dir="${TEST_DIR}"/>
+    <mkdir dir="${INT_TEST_DIR}"/>
+    <mkdir dir="${ETC_DIR}"/>
+    <mkdir dir="${PROJECT_DIR}/bin"/>
+    <mkdir dir="${PROJECT_DIR}/lib"/>
+    <mkdir dir="${PROJECT_DIR}/weblogic"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Defines the project global filter                                   -->
+  <!-- =================================================================== -->
+  <target name="global_filter" depends="prepare, read_sequence_num">
+    <filterset id="project.filters">
+      <filter token="VERSION" value="${VERSION}_${COSPORT_SEQUENCE}" />
+      <filter token="PROJECT_NAME" value="${env.PROJECT_NAME}" />
+      <filter token="NOW" value="${NOW}" />
+      <filter token="DATE" value="${TODAY}" />
+      <filter token="TIME" value="${TSTAMP}" />
+    </filterset>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Prints the project configuration                                    -->
+  <!-- =================================================================== -->
+  <target name="config" depends="read_sequence_num"
+          description="Prints CLASSPATH, SOURCEPATH and JAVA_COMPILER to the console">
+    <echo>
+
+Config parameters for project '${env.PROJECT_NAME}':
+-----------------------------------------------------
+BUILD_CLASSPATH:
+${env.BUILD_CLASSPATH}
+-----------------------------------------------------
+RUN_CLASSPATH:
+${env.CLASSPATH}
+-----------------------------------------------------
+SOURCEPATH:
+${env.SOURCEPATH}
+-----------------------------------------------------
+COMPILER: ${build.compiler}
+-----------------------------------------------------
+PROJECT VERSION: ${VERSION}_${BUILD_SEQUENCE}
+-----------------------------------------------------
+    </echo>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Generate manifest file                                              -->
+  <!-- =================================================================== -->
+  <target name="gen_manifest" depends="read_sequence_num, global_filter">
+    <copy file="ant/etc/defaultManifest.mf"
+          tofile="${MANIFEST}"
+          overwrite="true">
+      <filterset refid="project.filters"/>
+    </copy>
+  </target>
+
+
+  <!-- =================================================================== -->
+  <!-- Cleans up generated stuff                                           -->
+  <!-- =================================================================== -->
+  <target name="clean_all" depends="clean, clean_ejbs, clean_src, clean_doc"
+          description="Cleans up compiled files, genereated source, docs and ejbs [*]">
+  </target>
+
+
+  <!-- =================================================================== -->
+  <!--                                                                     -->
+  <!-- General targets                                                     -->
+  <!--                                                                     -->
+  <!-- =================================================================== -->
+
+  <!-- =================================================================== -->
+  <!-- Full clean-up and subsequent build                                  -->
+  <!-- =================================================================== -->
+  <target name="rebuild" depends="clean_full, build"
+          description="Full cleanup and rebuild"/>
+
+  <!-- =================================================================== -->
+  <!-- Generates deployables                                               -->
+  <!-- =================================================================== -->
+  <target name="gen_deployables" depends="gen_ejbs, gen_web_services, gen_webapps, gen_cosport_weblogic_jar"
+          description="Generates all deployables from compiled code" />
+
+  <!-- =================================================================== -->
+  <!-- Build all                                                           -->
+  <!-- =================================================================== -->
+  <target name="build" depends="gen_code, remove_surplus_classes, update, config_weblogic"
+          description="Runs coscopy and then generates all files, beans, gen_cosport_client_jar, config_weblogic and deploys everything" />
+
+  <!-- =================================================================== -->
+  <!-- Updates generated code and compiles                                 -->
+  <!-- =================================================================== -->
+  <target name="update" depends="gen_services, compile"
+          description="Compiles and deploys code changes, only bean code generation"/>
+
+  <!-- =================================================================== -->
+  <!-- Updates all deployables                                             -->
+  <!-- =================================================================== -->
+  <target name="gen_deploy" depends="gen_deployables, deploy, config_weblogic"
+          description="Compiles and deploys code changes, only bean code generation"/>
+
+  <!-- =================================================================== -->
+  <!-- Updates all changes to EAR										   -->
+  <!-- =================================================================== -->
+  <target name="update_ear" depends="gen_services, compile, gen_ejbs, gen_cosport_weblogic_jar_nohomeremote, deploy_ear"
+          description="Updates all changes into cosport.ear and deploys it."/>
+
+  <!-- =================================================================== -->
+  <!-- Updates changes in an EJB (services) into cosport.ear and deploys it-->
+  <!-- =================================================================== -->
+  <target name="quick_update_ear" depends="compilefile, gen_ejb, deploy_ear"
+          description="Updates changes in an EJB (services) into cosport.ear and deploys it. Usage quick_update_ear :[pattern]"/>
+
+  <!-- =================================================================== -->
+  <!-- Builds and deploys an EJB(service)                                  -->
+  <!-- =================================================================== -->
+  <target name="update_ejb" depends="compilefile, gen_ejb, deploy_ejbs"
+  		  description="Builds and deploys an EJB(service). To be used when logic in bean is changed. Usage update_ejb :[pattern]." />
+
+  <!-- =================================================================== -->
+  <!-- Generates, builds and deploys an EJB(service)                       -->
+  <!-- =================================================================== -->
+  <target name="update_gen_ejb" depends="gen_services, update_ejb"
+  		  description="Generates, builds and deploys an EJB(service). To be used when bean API is changed. Usage update_gen_ejb :[pattern]." />
+
+  <!-- ====================================================================================== -->
+  <!-- Gets devenv_env.zip from cc and unpacks it (all files except source and generated code)-->
+  <!-- ====================================================================================== -->
+  <target name="update_devenv_env" depends="prepare"
+  				description="Gets devenv_env.zip from cc and unpacks it (all files except source and generated code)">
+
+  	<copy file="\\tna-fbu-02-7867\cosport\cos\build\devenv_env.zip" tofile="build/devenv_env.zip"/>
+
+	  <echo message="Creating backup copies of any writable files found in 'ant, bin, lib, etc, weblogic'..."/>
+		<movewriteablefiles fromDir="ant" toDir="ant.backup"/>
+		<movewriteablefiles fromDir="bin" toDir="bin.backup"/>
+		<movewriteablefiles fromDir="etc" toDir="etc.backup"/>
+		<movewriteablefiles fromDir="lib" toDir="lib.backup"/>
+		<movewriteablefiles fromDir="weblogic" toDir="weblogic.backup"/>
+
+	  <echo message="Copying 'project.properties' file to 'project.properties.backup'."/>
+  	<copy file="project.properties" tofile="project.properties.backup" />
+
+  	<echo message="Temporarily making all files writable in: 'ant, bin, lib, etc, weblogic, project.properties'..."/>
+  	<exec dir="ant" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+  	<exec dir="bin" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+  	<exec dir="etc" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+  	<exec dir="lib" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+  	<exec dir="weblogic" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+  	<exec dir="." executable="attrib.exe" os="Windows 2000"><arg line="-r project.properties"/></exec>
+
+  	<echo message="Unzipping misc development files (source files not included)..."/>
+  	<unzip src="build/devenv_env.zip" dest="."/>
+
+  	<echo message="Making all files read only again in: 'ant, bin, lib, etc, weblogic, project.properties'..."/>
+  	<exec dir="ant" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+  	<exec dir="bin" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+  	<exec dir="etc" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+  	<exec dir="lib" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+  	<exec dir="." executable="attrib.exe" os="Windows 2000"><arg line="+r project.properties"/></exec>
+
+  </target>
+
+  <!-- ======================================================================================== -->
+  <!-- Gets devenv_code.zip from cc and unpacks it (all source code and generated/compiled code)-->
+  <!-- ======================================================================================== -->
+  <taskdef name="movewriteablefiles" classname="com.telenor.ant.taskdefs.MoveWriteableFiles"/>
+
+  <target name="update_devenv_code" depends="prepare" description="Gets devenv_code.zip from cc and unpacks it (all source code and generated/compiled code)">
+  	<copy file="\\tna-fbu-02-7867\cosport\cos\build\devenv_code.zip" tofile="build/devenv_code.zip" />
+
+    <!-- Per S H: Fix that moveWriteable files does not handle non-existing directories -->
+      <mkdir dir="source"/>
+      <mkdir dir="${TEST_DIR}/source.java"/>
+      <mkdir dir="${TEST_DIR}/source.aspect"/>
+      <mkdir dir="${TEST_DIR}/source.xmlbinding"/>
+     <mkdir dir="${TEST_DIR}/sql"/>
+     <mkdir dir="${INT_TEST_DIR}/source.java"/>
+
+	<movewriteablefiles fromDir="source" toDir="source.backup"/>
+	<movewriteablefiles fromDir="source.web" toDir="source.web.backup"/>
+    <movewriteablefiles fromDir="${TEST_DIR}/source.java" toDir="${TEST_DIR}/source.java.backup"/>
+    <movewriteablefiles fromDir="${TEST_DIR}/source.aspect" toDir="${TEST_DIR}/source.aspect.backup"/>
+    <movewriteablefiles fromDir="${TEST_DIR}/source.xmlbinding" toDir="${TEST_DIR}/source.xmlbinding.backup"/>
+    <movewriteablefiles fromDir="${TEST_DIR}/sql" toDir="${TEST_DIR}/sql.backup"/>
+    <movewriteablefiles fromDir="${INT_TEST_DIR}/source.java" toDir="${INT_TEST_DIR}/source.java.backup"/>
+
+  	<echo message="Changes all source files under source, source.web, test.integration, and test to be writable!"/>
+  	<exec dir="source" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+  	<exec dir="source.web" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+    <exec dir="${TEST_DIR}/source.java" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+    <exec dir="${TEST_DIR}/source.aspect" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+    <exec dir="${TEST_DIR}/source.xmlbinding" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+    <exec dir="${TEST_DIR}/sql" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+    <exec dir="${INT_TEST_DIR}/source.java" executable="attrib.exe" os="Windows 2000"><arg line="-r /s"/></exec>
+
+  	<unzip src="build/devenv_code.zip" dest="."/>
+
+  	<echo message="Changes all files under source, source.web, test.integration and test  to be read only!"/>
+  	<exec dir="source" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+  	<exec dir="source.web" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+    <exec dir="${TEST_DIR}/source.java" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+    <exec dir="${TEST_DIR}/source.aspect" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+    <exec dir="${TEST_DIR}/source.xmlbinding" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+    <exec dir="${TEST_DIR}/sql" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+    <exec dir="${INT_TEST_DIR}/source.java" executable="attrib.exe" os="Windows 2000"><arg line="+r /s"/></exec>
+
+  </target>
+
+</project>

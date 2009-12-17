@@ -1,0 +1,120 @@
+body { background-color: #fff; color: #333; }
+
+body, p, tr, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+p {
+    font-size: 90%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a, a:visited { color: #000; text-decoration:none; }
+a:hover { color: #fff; background-color:#000;}
+
+
+
+/*Table list*/
+
+table.list {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+tr.list, th.list, td.list { 
+    font-size: 85%;
+    border: 1px solid #aaa; 
+    empty-cells: show;
+    padding: 0 2px 0 0px;
+    white-space: nowrap;
+}
+
+th.list {
+    color: #eee;
+    background-color: #4d99ee;
+    vertical-align: bottom;
+}
+
+
+/*Table CR note main*/
+table.main {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+tr.main, td.main {
+    border: 1px solid #aaa; 
+    padding: 0px 0px 0px 0px;
+}
+
+
+/*Table CR note*/
+table.cr {
+    border-collapse: collapse;
+    text-align: left;
+    width: 50%;
+    height: 49%;
+}
+
+tr, td {
+    font-size: 78%;
+    border: 1px solid #aaa; 
+    empty-cells: show;
+    padding: 1px 1px 0px 0px;
+    vertical-align: top;
+}
+
+tr.top, tr.bottom {
+    background-color: #ddd;
+    font-weight: bold;
+    vertical-align: top;
+    height: 1pt;
+}
+
+#sprint {
+    text-align: right;
+}
+
+#release {
+    text-align: center;
+}
+
+tr.theme { 
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    vertical-align: center;
+    text-align: center;
+    height: 1pt;
+}
+
+tr.title {
+    font-weight: bold;
+    height: 10pt;
+}
+
+tr.description {
+    height: 80pt;
+}
+
+tr.customer, tr.contact {
+    height: 1pt;
+}
+
+tr.estimateheader {
+    font-weight: bold;
+    height: 1pt;
+}
+
+tr.estimate {
+    height: 20pt;
+}
+
+tr.etc {
+    height: 25pt;
+}
+
+

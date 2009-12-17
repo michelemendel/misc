@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'>
+  <ellipse cx='0.0' cy='0.0' fill='hotpink' opacity='0.1' rx='0.0' ry='20.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='20.0;0.0;20.0' calcMode='spline' begin='0.0' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='3.0' cy='3.0' fill='hotpink' opacity='0.1' rx='1.0' ry='20.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='20.25;0.675;20.25' calcMode='spline' begin='0.0625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='6.0' cy='6.0' fill='hotpink' opacity='0.1' rx='2.0' ry='20.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='20.5;1.366666667;20.5' calcMode='spline' begin='0.125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='9.0' cy='9.0' fill='hotpink' opacity='0.1' rx='3.0' ry='20.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='20.75;2.075;20.75' calcMode='spline' begin='0.1875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='12.0' cy='12.0' fill='hotpink' opacity='0.1' rx='4.0' ry='21.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='21.0;2.8;21.0' calcMode='spline' begin='0.25' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='15.0' cy='15.0' fill='hotpink' opacity='0.1' rx='5.0' ry='21.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='21.25;3.541666667;21.25' calcMode='spline' begin='0.3125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='18.0' cy='18.0' fill='hotpink' opacity='0.1' rx='6.0' ry='21.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='21.5;4.3;21.5' calcMode='spline' begin='0.375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='21.0' cy='21.0' fill='hotpink' opacity='0.1' rx='7.0' ry='21.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='21.75;5.075;21.75' calcMode='spline' begin='0.4375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='24.0' cy='24.0' fill='hotpink' opacity='0.1' rx='8.0' ry='22.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='22.0;5.866666667;22.0' calcMode='spline' begin='0.5' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='27.0' cy='27.0' fill='hotpink' opacity='0.1' rx='9.0' ry='22.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='22.25;6.675;22.25' calcMode='spline' begin='0.5625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='30.0' cy='30.0' fill='hotpink' opacity='0.1' rx='10.0' ry='22.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='22.5;7.5;22.5' calcMode='spline' begin='0.625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='33.0' cy='33.0' fill='hotpink' opacity='0.1' rx='11.0' ry='22.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='22.75;8.341666667;22.75' calcMode='spline' begin='0.6875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='36.0' cy='36.0' fill='hotpink' opacity='0.1' rx='12.0' ry='23.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='23.0;9.2;23.0' calcMode='spline' begin='0.75' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='39.0' cy='39.0' fill='hotpink' opacity='0.1' rx='13.0' ry='23.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='23.25;10.075;23.25' calcMode='spline' begin='0.8125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='42.0' cy='42.0' fill='hotpink' opacity='0.1' rx='14.0' ry='23.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='23.5;10.96666667;23.5' calcMode='spline' begin='0.875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='45.0' cy='45.0' fill='hotpink' opacity='0.1' rx='15.0' ry='23.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='23.75;11.875;23.75' calcMode='spline' begin='0.9375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='48.0' cy='48.0' fill='hotpink' opacity='0.1' rx='16.0' ry='24.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='24.0;12.8;24.0' calcMode='spline' begin='1.0' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='51.0' cy='51.0' fill='hotpink' opacity='0.1' rx='17.0' ry='24.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='24.25;13.74166667;24.25' calcMode='spline' begin='1.0625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='54.0' cy='54.0' fill='hotpink' opacity='0.1' rx='18.0' ry='24.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='24.5;14.7;24.5' calcMode='spline' begin='1.125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='57.0' cy='57.0' fill='hotpink' opacity='0.1' rx='19.0' ry='24.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='24.75;15.675;24.75' calcMode='spline' begin='1.1875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='60.0' cy='60.0' fill='hotpink' opacity='0.1' rx='20.0' ry='25.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='25.0;16.66666667;25.0' calcMode='spline' begin='1.25' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='63.0' cy='63.0' fill='hotpink' opacity='0.1' rx='21.0' ry='25.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='25.25;17.675;25.25' calcMode='spline' begin='1.3125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='66.0' cy='66.0' fill='hotpink' opacity='0.1' rx='22.0' ry='25.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='25.5;18.7;25.5' calcMode='spline' begin='1.375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='69.0' cy='69.0' fill='hotpink' opacity='0.1' rx='23.0' ry='25.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='25.75;19.74166667;25.75' calcMode='spline' begin='1.4375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='72.0' cy='72.0' fill='hotpink' opacity='0.1' rx='24.0' ry='26.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='26.0;20.8;26.0' calcMode='spline' begin='1.5' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='75.0' cy='75.0' fill='hotpink' opacity='0.1' rx='25.0' ry='26.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='26.25;21.875;26.25' calcMode='spline' begin='1.5625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='78.0' cy='78.0' fill='hotpink' opacity='0.1' rx='26.0' ry='26.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='26.5;22.96666667;26.5' calcMode='spline' begin='1.625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='81.0' cy='81.0' fill='hotpink' opacity='0.1' rx='27.0' ry='26.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='26.75;24.075;26.75' calcMode='spline' begin='1.6875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='84.0' cy='84.0' fill='hotpink' opacity='0.1' rx='28.0' ry='27.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='27.0;25.2;27.0' calcMode='spline' begin='1.75' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='87.0' cy='87.0' fill='hotpink' opacity='0.1' rx='29.0' ry='27.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='27.25;26.34166667;27.25' calcMode='spline' begin='1.8125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='90.0' cy='90.0' fill='hotpink' opacity='0.1' rx='30.0' ry='27.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='27.5;27.5;27.5' calcMode='spline' begin='1.875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='93.0' cy='93.0' fill='hotpink' opacity='0.1' rx='31.0' ry='27.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='27.75;28.675;27.75' calcMode='spline' begin='1.9375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='96.0' cy='96.0' fill='hotpink' opacity='0.1' rx='32.0' ry='28.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='28.0;29.86666667;28.0' calcMode='spline' begin='2.0' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='99.0' cy='99.0' fill='hotpink' opacity='0.1' rx='33.0' ry='28.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='28.25;31.075;28.25' calcMode='spline' begin='2.0625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='102.0' cy='102.0' fill='hotpink' opacity='0.1' rx='34.0' ry='28.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='28.5;32.3;28.5' calcMode='spline' begin='2.125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='105.0' cy='105.0' fill='hotpink' opacity='0.1' rx='35.0' ry='28.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='28.75;33.54166667;28.75' calcMode='spline' begin='2.1875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='108.0' cy='108.0' fill='hotpink' opacity='0.1' rx='36.0' ry='29.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='29.0;34.8;29.0' calcMode='spline' begin='2.25' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='111.0' cy='111.0' fill='hotpink' opacity='0.1' rx='37.0' ry='29.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='29.25;36.075;29.25' calcMode='spline' begin='2.3125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='114.0' cy='114.0' fill='hotpink' opacity='0.1' rx='38.0' ry='29.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='29.5;37.36666667;29.5' calcMode='spline' begin='2.375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='117.0' cy='117.0' fill='hotpink' opacity='0.1' rx='39.0' ry='29.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='29.75;38.675;29.75' calcMode='spline' begin='2.4375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='120.0' cy='120.0' fill='hotpink' opacity='0.1' rx='40.0' ry='30.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='30.0;40.0;30.0' calcMode='spline' begin='2.5' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='123.0' cy='123.0' fill='hotpink' opacity='0.1' rx='41.0' ry='30.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='30.25;41.34166667;30.25' calcMode='spline' begin='2.5625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='126.0' cy='126.0' fill='hotpink' opacity='0.1' rx='42.0' ry='30.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='30.5;42.7;30.5' calcMode='spline' begin='2.625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='129.0' cy='129.0' fill='hotpink' opacity='0.1' rx='43.0' ry='30.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='30.75;44.075;30.75' calcMode='spline' begin='2.6875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='132.0' cy='132.0' fill='hotpink' opacity='0.1' rx='44.0' ry='31.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='31.0;45.46666667;31.0' calcMode='spline' begin='2.75' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='135.0' cy='135.0' fill='hotpink' opacity='0.1' rx='45.0' ry='31.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='31.25;46.875;31.25' calcMode='spline' begin='2.8125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='138.0' cy='138.0' fill='hotpink' opacity='0.1' rx='46.0' ry='31.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='31.5;48.3;31.5' calcMode='spline' begin='2.875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='141.0' cy='141.0' fill='hotpink' opacity='0.1' rx='47.0' ry='31.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='31.75;49.74166667;31.75' calcMode='spline' begin='2.9375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='144.0' cy='144.0' fill='hotpink' opacity='0.1' rx='48.0' ry='32.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='32.0;51.2;32.0' calcMode='spline' begin='3.0' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='147.0' cy='147.0' fill='hotpink' opacity='0.1' rx='49.0' ry='32.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='32.25;52.675;32.25' calcMode='spline' begin='3.0625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='150.0' cy='150.0' fill='hotpink' opacity='0.1' rx='50.0' ry='32.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='32.5;54.16666667;32.5' calcMode='spline' begin='3.125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='153.0' cy='153.0' fill='hotpink' opacity='0.1' rx='51.0' ry='32.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='32.75;55.675;32.75' calcMode='spline' begin='3.1875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='156.0' cy='156.0' fill='hotpink' opacity='0.1' rx='52.0' ry='33.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='33.0;57.2;33.0' calcMode='spline' begin='3.25' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='159.0' cy='159.0' fill='hotpink' opacity='0.1' rx='53.0' ry='33.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='33.25;58.74166667;33.25' calcMode='spline' begin='3.3125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='162.0' cy='162.0' fill='hotpink' opacity='0.1' rx='54.0' ry='33.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='33.5;60.3;33.5' calcMode='spline' begin='3.375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='165.0' cy='165.0' fill='hotpink' opacity='0.1' rx='55.0' ry='33.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='33.75;61.875;33.75' calcMode='spline' begin='3.4375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='168.0' cy='168.0' fill='hotpink' opacity='0.1' rx='56.0' ry='34.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='34.0;63.46666667;34.0' calcMode='spline' begin='3.5' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='171.0' cy='171.0' fill='hotpink' opacity='0.1' rx='57.0' ry='34.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='34.25;65.075;34.25' calcMode='spline' begin='3.5625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='174.0' cy='174.0' fill='hotpink' opacity='0.1' rx='58.0' ry='34.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='34.5;66.7;34.5' calcMode='spline' begin='3.625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='177.0' cy='177.0' fill='hotpink' opacity='0.1' rx='59.0' ry='34.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='34.75;68.34166667;34.75' calcMode='spline' begin='3.6875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='180.0' cy='180.0' fill='hotpink' opacity='0.1' rx='60.0' ry='35.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='35.0;70.0;35.0' calcMode='spline' begin='3.75' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='183.0' cy='183.0' fill='hotpink' opacity='0.1' rx='61.0' ry='35.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='35.25;71.675;35.25' calcMode='spline' begin='3.8125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='186.0' cy='186.0' fill='hotpink' opacity='0.1' rx='62.0' ry='35.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='35.5;73.36666667;35.5' calcMode='spline' begin='3.875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='189.0' cy='189.0' fill='hotpink' opacity='0.1' rx='63.0' ry='35.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='35.75;75.075;35.75' calcMode='spline' begin='3.9375' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='192.0' cy='192.0' fill='hotpink' opacity='0.1' rx='64.0' ry='36.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='36.0;76.8;36.0' calcMode='spline' begin='4.0' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='195.0' cy='195.0' fill='hotpink' opacity='0.1' rx='65.0' ry='36.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='36.25;78.54166667;36.25' calcMode='spline' begin='4.0625' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='198.0' cy='198.0' fill='hotpink' opacity='0.1' rx='66.0' ry='36.5'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='36.5;80.3;36.5' calcMode='spline' begin='4.125' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='201.0' cy='201.0' fill='hotpink' opacity='0.1' rx='67.0' ry='36.75'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='36.75;82.075;36.75' calcMode='spline' begin='4.1875' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='204.0' cy='204.0' fill='hotpink' opacity='0.1' rx='68.0' ry='37.0'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='37.0;83.86666667;37.0' calcMode='spline' begin='4.25' attributeName='ry'/>
+  </ellipse>
+  <ellipse cx='207.0' cy='207.0' fill='hotpink' opacity='0.1' rx='69.0' ry='37.25'>
+    <animate keyTimes='1;0.5;1' dur='1' keySplines='0.5 0 0.5 1' fill='freeze' repeatCount='indefinite' values='37.25;85.675;37.25' calcMode='spline' begin='4.3125' attributeName='ry'/>
+  </ellipse>
+</svg>

@@ -1,0 +1,99 @@
+Starting iTunes XML program
+Number of songs=72
+
+-
+    Albinoni - Oboe Concerti Op9 -4
+    Heinrich Schutz - Symphoniea Sacre
+10cc
+    Dreadlock Holiday.mp3
+18 Wheeler
+    The Hours and the Times
+    Prozac Beats
+4 Non Blondes
+    Whats up.mp3
+A-ha
+    Crying in the rain
+Aerosmith
+    Fever
+    Pink
+The Alan Parsons Project
+    Eye In The Sky
+ARTIST ARTIST ARTIST 
+    NAME NAME NAME 
+Bach
+    1st Piano Concerto Movement (Allegro)
+    3rd Brandenburg Concerto (Allegro)
+    5th Brandenburg Concerto 1st Movement
+    Air
+    Air for the G String
+    Allegro
+    Aria (Orchestral Suite No. 3)
+    Bandinerie (Orchestral Suite No. 2)
+    Bourree From Suite In E Minor
+    C major prelude well
+    Concerto and Alleluja
+    Concerto for 2 Violins in D minor (II. Adagio)
+    Dorian
+    Double Violin Concerto
+    Double Violin Concerto Vivace
+    Fugue In G Minor
+    Violin Concerto No1, 1, Allegro
+    Violin Concerto No2, 1, Allegro
+The Beach Boys
+    Wouldn't It Be Nice
+Beach Boys
+    I Get Around
+the Beach Boys
+    Library
+Benny Goodman
+    Why Don't You Do Right?
+Bessie Smith
+    After You've Gone
+    Alexander's Ragtime Band
+    Baby Doll
+    Back Water Blues
+    Empty Bed Blues (Pts 1 & 2)
+    Golden Rule Blues
+    Hard Driving Papa
+    Hard Time Blues
+    Honey Man Blues
+    I Want Every Bit Of It
+    Jazzbo Brown From Memphis Town
+    Lonesome Desert Blues
+Bo Kaspers Orkester
+    Amerika
+    Bara Din Bild
+    Du Kan
+    En Ny Skön Värld
+    En Världsomsegling Under Havet
+    Ett & Noll
+    Gott Nytt År
+    Hem I Säng
+    Hon Är Så Söt
+    Håll Dig Till Den Du Har
+    Ingenting Alls
+    Kvarter
+    Lika Rädd Som Du
+    Mindre Smakar Mer
+    Puss
+    Satsa Några Kronor På Mig
+    Snäll Och Dum
+    Vi Kommer Aldrig Att Dö
+    Vi Tar In På Hotell
+    Är Det Där Vi Är Nu
+Brian Setzer Orchestra
+    Stray Cat Strut
+Duke & Count
+    Take The "A" Train
+John Hanson
+    prelude in d J.S Bach
+Mozart
+    Piano Concerto No17-movt1
+    Requiem Aeternam
+    Violin Concerto 3
+Unknown
+    Brandenburg Concerto - Allegro
+
+FileParserTime = 0.094
+FileTestTime = 0.031
+ok

@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>getJavaScriptTree (Favorites)</title>
+<link rel=StyleSheet href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body bgcolor="white">
+<pre><span class="cmt"># File favorites.rb, line 107</span>
+        <span class="kw">def</span> getJavaScriptTree()
+            js = <span class="str">&quot;&quot;</span>
+                
+                js += <span class="str">%@&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--\n@</span>
+                js += <span class="str">%@d = new dTree('d');\n@</span>
+                js += %@d.add(0,-1,'#{@treeTitle}<span class="str">');\n@
+                
+                recurseTree(@root)
+                #~ downloadIcons() # For icon use
+                
+                @favorites.sort.each{|link|
+                        if(link.isDir)
+                                js += %Q@d.add(#{link.id},#{link.pid},'</span><span class="cmt">#{link.title}','','','','img/folder.gif');\n@</span>
+                        <span class="kw">else</span>
+                                <span class="cmt"># If using icons: uncomment next two lines and remove third line.</span>
+                                <span class="cmt">#~ icon = &quot;#{@iconsDir}/icon#{link.id}.ico&quot;</span>
+                                <span class="cmt">#~ icon = File.exist?(icon)?icon.sub(Re_iconFile, '\1'):''</span>
+                                icon = <span class="str">''</span>
+                                js += %@d.add(#{link.id},#{link.pid},&quot;#{link.title}&quot;,'#{link.url}','','','#{icon}');\n@
+                        <span class="kw">end</span></pre>
+</body>
+</html>

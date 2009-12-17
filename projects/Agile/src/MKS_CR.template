@@ -1,0 +1,59 @@
+<table class="cr">
+  <tr class="top">
+    <td>%ID%</td>
+    <td colspan="3" id="release">%Release name%</td>
+    <td id="sprint">%sprint%</td>
+  </tr>
+  
+  <tr class="theme">
+    <td colspan="5" style="color:#%theme_color%; background-color:#%theme_bgcolor%">%theme%</td>
+  </tr>
+  
+  <tr class="title">
+    <td>Title</td>
+    <td colspan="4">%Title%</td>
+  </tr>
+
+  <tr class="description">
+    <td>Desc</td>
+    <td colspan="4">%Description%</td>
+  </tr>
+  
+  <tr class="customer">
+    <td>Customer</td>
+    <td colspan="4">%Customer%</td>
+  </tr>  
+  
+  <tr class="contact">
+    <td>Contact</td>
+    <td colspan="4">%Contact person%</td>
+  </tr>  
+  
+  <tr class="estimateheader">
+    <td>[dv]</td>
+    <td>dev</td>
+    <td>test</td>
+    <td>tot</td>
+    <td>used</td>
+  </tr>  
+  
+  <tr class="estimate">
+    <td>estimate</td>
+    <td>%estdev%</td>
+    <td>%esttest%</td>
+    <td>%esttot%</td>
+    <td class="etc" rowspan="2">%used%</td>
+  </tr>  
+  
+  <tr class="etc">
+    <td class="etc">etc</td>
+    <td class="etc">%etcdev%</td>
+    <td class="etc">%etctest%</td>
+    <td class="etc">%etctot%</td>
+  </tr>  
+  
+  <tr class="bottom">
+    <td colspan="5">&nbsp;</td>
+  </tr>
+</table>
+

@@ -1,0 +1,17 @@
+
+
+graph
+
+node:
+id:1
+label:node1
+x:20
+y:30
+
+
+edge
+label
+node1
+node2
+directed
+weight (length)

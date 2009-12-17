@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<project>
+  <extend>../project.xml</extend>
+  <dependencies>
+
+    <dependency>
+      <groupId>sybase</groupId>
+      <artifactId>jconn2</artifactId>
+      <version>${sybase.jdbc.version}</version>
+      <type>jar</type>
+    </dependency>
+    
+    <dependency>
+      <groupId>cosmos-devtools</groupId>
+      <artifactId>maven-wrappergen-plugin</artifactId>
+      <version>${devtools.version}</version>
+      <type>plugin</type>
+    </dependency>
+
+    <dependency>
+      <groupId>cosmos-devtools</groupId>
+      <artifactId>maven-ejbgen-plugin</artifactId>
+      <version>${devtools.version}</version>
+      <type>plugin</type>
+    </dependency>
+ 
+    <dependency>      
+      <groupId>oro</groupId>
+      <artifactId>oro</artifactId>
+      <version>2.0.7</version>
+      <properties>
+        <classloader>root</classloader>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>weblogic</groupId>
+      <artifactId>weblogic</artifactId>
+      <version>${weblogic.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.8</version>
+    </dependency>
+
+    <dependency>
+      <groupId>dbunit</groupId>
+      <artifactId>dbunit</artifactId>
+      <version>2.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mockejb</groupId>
+      <artifactId>mockejb</artifactId>
+      <version>0.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>cos</groupId>
+      <artifactId>cos-wrapper-core</artifactId>
+      <version>${cos_integration.version}</version>
+      <properties>
+        <wovenfortest>true</wovenfortest>
+      </properties>
+    </dependency>
+
+  
+    <dependency> <!-- Needed by the db:insert-procedures goal -->
+      <groupId>cos</groupId>
+      <artifactId>cos-test-core</artifactId>
+      <version>${cos_test.version}</version>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <unitTestSourceDirectory>test/java</unitTestSourceDirectory>
+    <aspectSourceDirectory>target/aspectj</aspectSourceDirectory>
+    <resources>
+      <resource>
+        <directory>${basedir}/src/java</directory>
+          <includes>
+            <include>**/*</include>
+          </includes>
+          <excludes>
+            <exclude>**/*.java</exclude>
+            <exclude>**/*.tmp*</exclude>
+          </excludes>
+      </resource>
+      <resource>
+        <directory>${basedir}/target/src/java</directory>
+          <includes>
+            <include>**/*</include>
+          </includes>
+          <excludes>
+            <exclude>**/*.java</exclude>
+            <exclude>**/*.tmp*</exclude>
+          </excludes>
+      </resource>
+    </resources>   
+    <unitTest>
+      <includes>
+        <include>${maven.test.include}</include>
+      </includes>
+      <resources>
+        <resource>
+          <directory>test/java</directory>
+          <includes>
+            <include>**/*</include>
+          </includes>
+          <excludes>
+            <exclude>**/*.java</exclude>
+          </excludes>
+        </resource>
+        <resource>
+          <directory>src/java</directory>
+          <includes>
+            <include>**/*</include>
+          </includes>
+          <excludes>
+            <exclude>**/*.java</exclude>
+          </excludes>
+        </resource>
+       </resources>
+    </unitTest>
+  </build>
+</project>

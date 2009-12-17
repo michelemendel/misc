@@ -1,0 +1,68 @@
+This is the full text of my RCR at rubygarden
+
+http://www.rubygarden.org/article.php?sid=120
+
+---------------------------------------------------------------------------
+
+I write a lot of scripts which need to understand options.  While getoptlong is
+a good package, I consider optparse to be more easy to handle and more powerful
+since all relevant data for an option can be specified on a single place:
+syntax, datatype, help text and the action to be performed when this option is
+found.  Example:
+
+Getoptlong:
+-----------
+#! /usr/bin/env ruby
+
+require 'getoptlong'
+
+setup = Hash.new("")
+
+def printHelp
+  puts &#108;t;&#108;t;HELP
+Usage:
+    ruby generateMultilang.rb [options] DIRS+
+
+Options:
+
+    --outdir|-O   DIR       Write output to this directory
+    --tarname|-N  FILE      Specify tarfile to be generated
+    --help|-H               This text
+HELP
+end
+
+opts = GetoptLong.new([ '--outdir',   '-O', GetoptLong::REQUIRED_ARGUMENT ],
+                      [ '--tarname',  '-N', GetoptLong::REQUIRED_ARGUMENT ],
+                      [ '--help',     '-H', GetoptLong::NO_ARGUMENT])
+
+opts.each do |opt, arg|
+  case opt
+  when /--help|-H/ then printHelp; exit 1
+  when /--outdir|-O/ then setup['outdir'] = arg 
+  when /--tarname|-N/ then setup['tarname'] = arg
+  end
+end
+
+
+
+Optparse:
+---------
+#! /usr/bin/env ruby
+
+require 'optparse'
+
+setup = Hash.new("")
+
+ARGV.options {
+  |opt|
+
+  opt.banner = "Usage:ntruby generateMultilang.rb [options] DIRS+n"
+
+  opt.on("Options:n")
+  opt.on("--outdir DIR", "-O", String, "Write output to this directory") { |setup['outdir']|}
+  opt.on("--tarname FILE", "-N", String, "Specify tarfile to be generated") { |setup['tarname']|}
+  opt.on("--help", "-H", "This text") { puts opt; exit 0 }
+
+  opt.parse!
+
+}

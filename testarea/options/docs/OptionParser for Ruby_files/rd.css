@@ -1,0 +1,18 @@
+BODY {
+	BACKGROUND: #eeeeee; MARGIN-LEFT: 3%; COLOR: black; MARGIN-RIGHT: 3%
+}
+H1 {
+	TEXT-ALIGN: center
+}
+H2 {
+	BACKGROUND: #cc3333; COLOR: #ffffff
+}
+DL {
+	MARGIN-LEFT: 3%
+}
+DL DT {
+	FONT-WEIGHT: bold
+}
+PRE {
+	MARGIN-LEFT: 3%; COLOR: #7f3f5f
+}

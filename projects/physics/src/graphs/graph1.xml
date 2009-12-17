@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<GraphXML>
+    <graph>
+
+        <node name="first">
+            <position x="0.0" y="0.0"/>
+        </node>
+
+        <node name="second">
+            <position x="10.0" y="10.0"/>
+        </node>
+
+        <node name="third">
+            <position x="20.0" y="20.0"/>
+        </node>
+
+        <edge source="first" target="second" isDirected="false"/>
+        <edge source="third" target="second" isDirected="true"/>
+        <edge source="first" target="third"/>
+
+    </graph>
+</GraphXML>

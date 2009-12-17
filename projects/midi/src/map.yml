@@ -1,0 +1,86 @@
+## YAML Template.
+
+#rel = YAML.load(File.open("releases.yml"))
+
+# 1     2     3  4     5     6      7
+# c  c# d  d# e  f  f# g  g# a  a#  b
+# 0  1  2  3  4  5  6  7  8  9  10  11
+
+# c  d  e  f  g  a  b
+# 0  2  4  5  7  9  11
+
+#C major chords 7th
+#c      ceg     b
+#dm     dfa     c
+#em     egb     d
+#f      fac     e
+#g      gbd     f
+#am     ace     g
+#b      bdf     a
+
+b: chord 0 4 7      #c
+p: chord 7 11 3 5   #g7
+f: chord 5 9 0      #f
+c: chord 2 5 9      #dm
+d: chord 4 7 11     #em
+g: chord 7 11 2     #g
+k: chord 0 4 7 11   #cmaj7
+q: chord 9 0 4 7    #am7
+j: chord 11 2 5     #bdim
+l: chord 2 5 9 0    #dm7
+m: chord 4 7 11 2   #em7
+h: chord 9 0 4      #am
+r: chord 11 2 5 9   #bm75
+n: chord 5 9 0 4    #fmaj7
+s: chord 0 7
+v: chord 4 11
+w: chord 5 0
+x: chord 7 2
+z: chord 9 4
+t: chord 2 9
+a: note 0
+e: note 2
+i: note 4
+o: note 5
+u: note 7
+y: note 9
+'0': chord 0 11
+'1': chord 1 10
+'2': chord 2 9
+'3': chord 3 8
+'4': chord 4 7
+'5': chord 5 6
+'6': chord 6 5
+'7': chord 7 4
+'8': chord 8 3
+'9': chord 9 2
+'_': chord 0 0 0 0
+'.': chord 0 0 0 0
+',': chord 0 0 0 0
+':': chord 0 0 0 0
+';': chord 0 0 0 0
+'(': chord 0 0 0 0
+')': chord 0 0 0 0
+'{': chord 0 0 0 0
+'}': chord 0 0 0 0
+'[': chord 0 0 0 0
+']': chord 0 0 0 0
+'|': chord 0 0 0 0
+'=': chord 0 0 0 0
+'+': chord 0 0 0 0
+'-': chord 0 0 0 0
+'*': chord 0 0 0 0
+'/': chord 0 0 0 0
+'\': chord 0 0 0 0
+'<': chord 0 0 0 0
+'>': chord 0 0 0 0
+'!': chord 0 0 0 0
+'#': chord 0 0 0 0
+'@': chord 0 0 0 0
+
+#a: drum35
+#e: drum38
+#i: drum42
+#o: drum45
+#u: drum48
+#y: drum75

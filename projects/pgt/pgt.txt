@@ -1,0 +1,11 @@
+
+schedule
+	slot
+		day
+		time
+		field
+		match
+			division
+			home_team
+			away_team
+			score

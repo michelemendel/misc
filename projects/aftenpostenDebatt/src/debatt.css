@@ -1,0 +1,53 @@
+
+body { 
+    background-color: #fff; 
+    color: #333; 
+}
+
+body, p, b, a, .compact {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   85%;
+}
+
+a, a:visited { 
+    color: #00a; 
+    font-size: 80%;
+    text-decoration:none;
+}
+a:hover { 
+    color: #a00;
+    font-size:   80%;
+    background-color:#fff;
+}
+
+.title {
+    font-size: 100%;
+    font-weight: bold;
+/*    padding: 0 2px 15px 0;*/
+}
+
+h1 {
+    font-size:   110%;
+    border-bottom: thin solid;
+}
+
+h2 {
+    font-size:   90%;
+}
+
+
+.date {
+    font-size: 80%;
+/*    padding: 0 2px 15px 0;*/
+}
+
+.compact {
+    font-size: 80%;
+    padding: 0 0 0 0;
+}
+p.text {
+    padding: 0 2px 15px 0;
+    border-bottom: thin solid;
+}
+
+

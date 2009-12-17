@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\SpringPhysicsEngine.exe
+bin\Debug\SpringPhysicsEngine.pdb
+obj\Debug\SpringPhysicsEngine.exe
+obj\Debug\SpringPhysicsEngine.pdb
+bin\Release\SpringPhysicsEngine.exe
+bin\Release\SpringPhysicsEngine.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\SpringPhysicsEngine.exe
+obj\Release\SpringPhysicsEngine.pdb

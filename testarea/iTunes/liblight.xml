@@ -1,0 +1,1772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>4.2</string>
+	<key>Music Folder</key><string>file://localhost/G:/iTunes/PopRock/</string>
+	<key>Tracks</key>
+	<dict>
+		<key xxxxx="ARNEANKA" yyyyy="KLILLEKLOKODIL">33</key>
+		<dict>
+			<key>Track ID</key><integer>33</integer>
+			<key>Name</key><string>NAME NAME NAME </string>
+			<key>Artist</key><string>ARTIST ARTIST ARTIST </string>
+			<key>Composer</key><string>COMPOSER COMPOSER COMPOSER </string>
+			<key>Album</key><string>ALBUM ALBUM ALBUM </string>
+			<key>Genre</key><string>GENRE GENRE GENRE </string>
+			<key>Kind</key><string>KIND KIND KIND </string>
+			<key>Size</key><integer>SIZE SIZE SIZE </integer>
+			<key>Total Time</key><integer>TOTALTIME TOTALTIME TOTALTIME </integer>
+			<key>Disc Number</key><integer>DISCNUMBER DISCNUMBER DISCNUMBER </integer>
+			<key>Disc Count</key><integer>DISCCOUNT DISCCOUNT DISCCOUNT </integer>
+			<key>Track Number</key><integer>TRACKNUMBER TRACKNUMBER TRACKNUMBER </integer>
+			<key>Track Count</key><integer>TRACKCOUNT TRACKCOUNT TRACKCOUNT </integer>
+			<key>Year</key><integer>YEAR YEAR YEAR </integer>
+			<key>Date Modified</key><date>DATEMODIFIED DATEMODIFIED DATEMODIFIED </date>
+			<key>Date Added</key><date>DATEADDED DATEADDED DATEADDED </date>
+			<key>Bit Rate</key><integer>BITRATE BITRATE BITRATE </integer>
+			<key>Sample Rate</key><integer>SAMPLERATE SAMPLERATE SAMPLERATE </integer>
+			<key>Play Count</key><integer>PLAYCOUNT PLAYCOUNT PLAYCOUNT </integer>
+			<key>Play Date</key><integer>PLAYDATE PLAYDATE PLAYDATE </integer>
+			<key>Play Date UTC</key><date>PLAYDATEUTC PLAYDATEUTC PLAYDATEUTC </date>
+			<key>Normalization</key><integer>NORMALIZATION NORMALIZATION NORMALIZATION </integer>
+            <key>Comments</key><string>COMMENTS COMMENTS COMMENTS </string>
+			<key>Location</key><string>LOCATION LOCATION LOCATION </string>
+			<key>File Folder Count</key><integer>FILEFOLDER FILEFOLDER FILEFOLDER </integer>
+			<key>Library Folder Count</key><integer>LIBRARYFOLDER LIBRARYFOLDER LIBRARYFOLDER </integer>
+		</dict>
+		<key>34</key>
+		<dict>
+			<key>Track ID</key><integer>34</integer>
+			<key>Name</key><string>Prozac Beats</string>
+			<key>Artist</key><string>18 Wheeler</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4661687</integer>
+			<key>Total Time</key><integer>291317</integer>
+			<key>Date Modified</key><date>2004-04-18T12:58:07Z</date>
+			<key>Date Added</key><date>2004-03-07T23:00:01Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>3320</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/18%20Wheeler/18%20Wheeler%20-%20Prozac%20Beats.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>35</key>
+		<dict>
+			<key>Track ID</key><integer>35</integer>
+			<key>Name</key><string>The Hours and the Times</string>
+			<key>Artist</key><string>18 Wheeler</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3524013</integer>
+			<key>Total Time</key><integer>220212</integer>
+			<key>Date Modified</key><date>2004-04-18T12:58:08Z</date>
+			<key>Date Added</key><date>2004-03-07T23:00:01Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>3717</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/18%20Wheeler/18%20Wheeler%20-%20The%20Hours%20and%20the%20Times.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>36</key>
+		<dict>
+			<key>Track ID</key><integer>36</integer>
+			<key>Name</key><string>Whats up.mp3</string>
+			<key>Artist</key><string>4 Non Blondes</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4634523</integer>
+			<key>Total Time</key><integer>289619</integer>
+			<key>Date Modified</key><date>2004-04-18T12:58:08Z</date>
+			<key>Date Added</key><date>2004-03-07T23:05:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>3531</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/4%20Non%20Blondes/4%20Non%20Blondes%20-%20Whats%20up.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>37</key>
+		<dict>
+			<key>Track ID</key><integer>37</integer>
+			<key>Name</key><string>Vi Kommer Aldrig Att Dö</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4299701</integer>
+			<key>Total Time</key><integer>265543</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:26Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1129899788</integer>
+			<key>Play Date UTC</key><date>2004-04-17T15:25:08Z</date>
+			<key>Normalization</key><integer>684</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2001%20-%20Vi%20Kommer%20Aldrig%20Att%20D%C3%B6.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>38</key>
+		<dict>
+			<key>Track ID</key><integer>38</integer>
+			<key>Name</key><string>En Ny Skön Värld</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4224283</integer>
+			<key>Total Time</key><integer>260829</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:26Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1129898894</integer>
+			<key>Play Date UTC</key><date>2004-04-17T15:40:02Z</date>
+			<key>Normalization</key><integer>1344</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2002%20-%20En%20Ny%20Sk%C3%B6n%20V%C3%A4rld.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>39</key>
+		<dict>
+			<key>Track ID</key><integer>39</integer>
+			<key>Name</key><string>Ett &#38; Noll</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4010288</integer>
+			<key>Total Time</key><integer>247455</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:26Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1129898646</integer>
+			<key>Play Date UTC</key><date>2004-04-17T15:44:10Z</date>
+			<key>Normalization</key><integer>706</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2003%20-%20Ett%20&#38;%20Noll.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>40</key>
+		<dict>
+			<key>Track ID</key><integer>40</integer>
+			<key>Name</key><string>Amerika</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4337010</integer>
+			<key>Total Time</key><integer>267865</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:26Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>936</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2004%20-%20Amerika.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>41</key>
+		<dict>
+			<key>Track ID</key><integer>41</integer>
+			<key>Name</key><string>Lika Rädd Som Du</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>5491200</integer>
+			<key>Total Time</key><integer>339197</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>1096</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2005%20-%20Lika%20R%C3%A4dd%20Som%20Du.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>42</key>
+		<dict>
+			<key>Track ID</key><integer>42</integer>
+			<key>Name</key><string>Kvarter</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>3335237</integer>
+			<key>Total Time</key><integer>205264</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>851</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2006%20-%20Kvarter.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>43</key>
+		<dict>
+			<key>Track ID</key><integer>43</integer>
+			<key>Name</key><string>Är Det Där Vi Är Nu</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4256977</integer>
+			<key>Total Time</key><integer>262873</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>962</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2007%20-%20%C3%84r%20Det%20D%C3%A4r%20Vi%20%C3%84r%20Nu.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>44</key>
+		<dict>
+			<key>Track ID</key><integer>44</integer>
+			<key>Name</key><string>En Världsomsegling Under Havet</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4710864</integer>
+			<key>Total Time</key><integer>290969</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>1064</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2008%20-%20En%20V%C3%A4rldsomsegling%20Under%20Havet.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>45</key>
+		<dict>
+			<key>Track ID</key><integer>45</integer>
+			<key>Name</key><string>Du Kan</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4527869</integer>
+			<key>Total Time</key><integer>279661</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>800</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2009%20-%20Du%20Kan.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>46</key>
+		<dict>
+			<key>Track ID</key><integer>46</integer>
+			<key>Name</key><string>Gott Nytt År</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>Amerika</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>5153432</integer>
+			<key>Total Time</key><integer>318322</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1996</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>694</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/Amerika/Bo%20Kaspers%20Orkester%20-%20Amerika%20-%2010%20-%20Gott%20Nytt%20%C3%85r.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>47</key>
+		<dict>
+			<key>Track ID</key><integer>47</integer>
+			<key>Name</key><string>Ingenting Alls</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4963735</integer>
+			<key>Total Time</key><integer>306596</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>693</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2001%20-%20Ingenting%20Alls.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>48</key>
+		<dict>
+			<key>Track ID</key><integer>48</integer>
+			<key>Name</key><string>Bara Din Bild</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4752176</integer>
+			<key>Total Time</key><integer>293523</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>630</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2002%20-%20Bara%20Din%20Bild.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>49</key>
+		<dict>
+			<key>Track ID</key><integer>49</integer>
+			<key>Name</key><string>Hem I Säng</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>2753249</integer>
+			<key>Total Time</key><integer>168878</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>654</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2003%20-%20Hem%20I%20S%C3%A4ng.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>50</key>
+		<dict>
+			<key>Track ID</key><integer>50</integer>
+			<key>Name</key><string>Puss</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4309732</integer>
+			<key>Total Time</key><integer>266170</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>962</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2004%20-%20Puss.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>51</key>
+		<dict>
+			<key>Track ID</key><integer>51</integer>
+			<key>Name</key><string>Hon Är Så Söt</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>3781060</integer>
+			<key>Total Time</key><integer>233128</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>954</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2005%20-%20Hon%20%C3%84r%20S%C3%A5%20S%C3%B6t.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>52</key>
+		<dict>
+			<key>Track ID</key><integer>52</integer>
+			<key>Name</key><string>Satsa Några Kronor På Mig</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>3048796</integer>
+			<key>Total Time</key><integer>187361</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>1361</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2006%20-%20Satsa%20N%C3%A5gra%20Kronor%20P%C3%A5%20Mig.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>53</key>
+		<dict>
+			<key>Track ID</key><integer>53</integer>
+			<key>Name</key><string>Mindre Smakar Mer</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>3881371</integer>
+			<key>Total Time</key><integer>239397</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>623</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2007%20-%20Mindre%20Smakar%20Mer.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>54</key>
+		<dict>
+			<key>Track ID</key><integer>54</integer>
+			<key>Name</key><string>Håll Dig Till Den Du Har</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4051527</integer>
+			<key>Total Time</key><integer>250032</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>980</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2008%20-%20H%C3%A5ll%20Dig%20Till%20Den%20Du%20Har.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>55</key>
+		<dict>
+			<key>Track ID</key><integer>55</integer>
+			<key>Name</key><string>Snäll Och Dum</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>4024777</integer>
+			<key>Total Time</key><integer>248360</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>1349</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2009%20-%20Sn%C3%A4ll%20Och%20Dum.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>56</key>
+		<dict>
+			<key>Track ID</key><integer>56</integer>
+			<key>Name</key><string>Vi Tar In På Hotell</string>
+			<key>Artist</key><string>Bo Kaspers Orkester</string>
+			<key>Album</key><string>På Hotell</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>3046195</integer>
+			<key>Total Time</key><integer>187199</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2004-03-08T00:20:14Z</date>
+			<key>Date Added</key><date>2004-03-07T23:07:27Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>927</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Bo%20Kaspers%20Orkester/P%C3%A5%20Hotell/Bo%20Kaspers%20Orkester%20-%20P%C3%A5%20Hotell%20-%2010%20-%20Vi%20Tar%20In%20P%C3%A5%20Hotell.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>57</key>
+		<dict>
+			<key>Track ID</key><integer>57</integer>
+			<key>Name</key><string>Dreadlock Holiday.mp3</string>
+			<key>Artist</key><string>10cc</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4763840</integer>
+			<key>Total Time</key><integer>297717</integer>
+			<key>Date Modified</key><date>2004-04-18T12:58:42Z</date>
+			<key>Date Added</key><date>2004-03-07T23:12:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1133299178</integer>
+			<key>Play Date UTC</key><date>2004-03-09T07:08:38Z</date>
+			<key>Normalization</key><integer>995</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/10CC/10cc%20-%20Dreadlock%20Holiday.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>58</key>
+		<dict>
+			<key>Track ID</key><integer>58</integer>
+			<key>Name</key><string>Fever</string>
+			<key>Artist</key><string>Aerosmith</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4092085</integer>
+			<key>Total Time</key><integer>255738</integer>
+			<key>Date Modified</key><date>2004-04-18T12:58:42Z</date>
+			<key>Date Added</key><date>2004-03-07T23:12:50Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>9310</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Aerosmith/Aerosmith%20-%20Fever.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>59</key>
+		<dict>
+			<key>Track ID</key><integer>59</integer>
+			<key>Name</key><string>Pink</string>
+			<key>Artist</key><string>Aerosmith</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3287951</integer>
+			<key>Total Time</key><integer>234814</integer>
+			<key>Date Modified</key><date>2004-04-18T12:58:42Z</date>
+			<key>Date Added</key><date>2004-03-07T23:12:50Z</date>
+			<key>Bit Rate</key><integer>112</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>254</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Aerosmith/Aerosmith%20-%20Pink.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>60</key>
+		<dict>
+			<key>Track ID</key><integer>60</integer>
+			<key>Name</key><string>Crying in the rain</string>
+			<key>Artist</key><string>A-ha</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4233570</integer>
+			<key>Total Time</key><integer>264568</integer>
+			<key>Date Modified</key><date>2004-04-18T12:58:44Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:02Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1133278437</integer>
+			<key>Play Date UTC</key><date>2004-03-09T12:54:19Z</date>
+			<key>Normalization</key><integer>733</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/A-ha/A-ha%20-%20Crying%20In%20The%20Rain.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>61</key>
+		<dict>
+			<key>Track ID</key><integer>61</integer>
+			<key>Name</key><string>Eye In The Sky</string>
+			<key>Artist</key><string>The Alan Parsons Project</string>
+			<key>Album</key><string>The Ultimate Collection</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4382131</integer>
+			<key>Total Time</key><integer>273841</integer>
+			<key>Year</key><integer>1981</integer>
+			<key>Date Modified</key><date>2004-04-18T12:59:11Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:14Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1133277956</integer>
+			<key>Play Date UTC</key><date>2004-03-09T13:02:20Z</date>
+			<key>Normalization</key><integer>849</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Alan%20Parson/Alan%20Parson%20-%20Eye%20in%20the%20sky.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>62</key>
+		<dict>
+			<key>Track ID</key><integer>62</integer>
+			<key>Name</key><string>Albinoni - Oboe Concerti Op9 -4</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4552529</integer>
+			<key>Total Time</key><integer>284499</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:10Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>1288</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Albinoni%20-%20Oboe%20Concerti%20Op9%20-4.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>63</key>
+		<dict>
+			<key>Track ID</key><integer>63</integer>
+			<key>Name</key><string>1st Piano Concerto Movement (Allegro)</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7234913</integer>
+			<key>Total Time</key><integer>516754</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:23Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>112</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>594</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%201st%20Piano%20Concerto%20Movement%20(Allegro).mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>64</key>
+		<dict>
+			<key>Track ID</key><integer>64</integer>
+			<key>Name</key><string>5th Brandenburg Concerto 1st Movement</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10408157</integer>
+			<key>Total Time</key><integer>650475</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:24Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>397</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%205th%20Brandenburg%20Concerto%201st%20Movement.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>65</key>
+		<dict>
+			<key>Track ID</key><integer>65</integer>
+			<key>Name</key><string>Air for the G String</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3182963</integer>
+			<key>Total Time</key><integer>198896</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:24Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>169</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Air%20for%20the%20G%20String.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>66</key>
+		<dict>
+			<key>Track ID</key><integer>66</integer>
+			<key>Name</key><string>Air</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3890635</integer>
+			<key>Total Time</key><integer>243147</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:25Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>31</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Air.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>67</key>
+		<dict>
+			<key>Track ID</key><integer>67</integer>
+			<key>Name</key><string>Allegro</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5394623</integer>
+			<key>Total Time</key><integer>337136</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:25Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>610</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Allegro.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>68</key>
+		<dict>
+			<key>Track ID</key><integer>68</integer>
+			<key>Name</key><string>Aria (Orchestral Suite No. 3)</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4140681</integer>
+			<key>Total Time</key><integer>344999</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:25Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>96</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>280</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Aria%20(Orchestral%20Suite%20No.%203).mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>69</key>
+		<dict>
+			<key>Track ID</key><integer>69</integer>
+			<key>Name</key><string>Bandinerie (Orchestral Suite No. 2)</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>1139983</integer>
+			<key>Total Time</key><integer>94955</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:27Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:53Z</date>
+			<key>Bit Rate</key><integer>96</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>334</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Bandinerie%20(Orchestral%20Suite%20No.%202).mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>70</key>
+		<dict>
+			<key>Track ID</key><integer>70</integer>
+			<key>Name</key><string>Bourree From Suite In E Minor</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>1543797</integer>
+			<key>Total Time</key><integer>96470</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:27Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>189</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Bourree%20From%20Suite%20In%20E%20Minor.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>71</key>
+		<dict>
+			<key>Track ID</key><integer>71</integer>
+			<key>Name</key><string>Brandenburg Concerto - Allegro</string>
+			<key>Artist</key><string>Unknown</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3246080</integer>
+			<key>Total Time</key><integer>202814</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:17Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>508</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Brandenburg%20Concerto%20-%20Allegro.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>72</key>
+		<dict>
+			<key>Track ID</key><integer>72</integer>
+			<key>Name</key><string>C major prelude well</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2126880</integer>
+			<key>Total Time</key><integer>132911</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:27Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>936</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20C%20major%20prelude%20well.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>73</key>
+		<dict>
+			<key>Track ID</key><integer>73</integer>
+			<key>Name</key><string>Concerto and Alleluja</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2322637</integer>
+			<key>Total Time</key><integer>145136</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:28Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>463</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Concerto%20and%20Alleluja.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>74</key>
+		<dict>
+			<key>Track ID</key><integer>74</integer>
+			<key>Name</key><string>Concerto for 2 Violins in D minor (II. Adagio)</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3086126</integer>
+			<key>Total Time</key><integer>192862</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:28Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>128</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Concerto%20for%202%20Violins%20in%20D%20minor%20(II.%20Adagio).mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>75</key>
+		<dict>
+			<key>Track ID</key><integer>75</integer>
+			<key>Name</key><string>Dorian</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12543278</integer>
+			<key>Total Time</key><integer>783934</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:29Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>432</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Dorian.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>76</key>
+		<dict>
+			<key>Track ID</key><integer>76</integer>
+			<key>Name</key><string>Double Violin Concerto Vivace</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3937757</integer>
+			<key>Total Time</key><integer>246073</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:29Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>797</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Double%20Violin%20Concerto%20Vivace.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>77</key>
+		<dict>
+			<key>Track ID</key><integer>77</integer>
+			<key>Name</key><string>Double Violin Concerto</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3940611</integer>
+			<key>Total Time</key><integer>246256</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:30Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:54Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>797</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Double%20Violin%20Concerto.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>78</key>
+		<dict>
+			<key>Track ID</key><integer>78</integer>
+			<key>Name</key><string>Fugue In G Minor</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3344291</integer>
+			<key>Total Time</key><integer>208979</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:30Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:55Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>381</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Fugue%20In%20G%20Minor.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>79</key>
+		<dict>
+			<key>Track ID</key><integer>79</integer>
+			<key>Name</key><string>prelude in d J.S Bach</string>
+			<key>Artist</key><string>John Hanson</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2219461</integer>
+			<key>Total Time</key><integer>138684</integer>
+			<key>Year</key><integer>1999</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:22Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:55Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>148</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20prelude_in_d.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>80</key>
+		<dict>
+			<key>Track ID</key><integer>80</integer>
+			<key>Name</key><string>Violin Concerto No1, 1, Allegro</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3711191</integer>
+			<key>Total Time</key><integer>231915</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:30Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:55Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>434</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Violin%20Concerto%20No1,%201,%20Allegro.MP3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>81</key>
+		<dict>
+			<key>Track ID</key><integer>81</integer>
+			<key>Name</key><string>Violin Concerto No2, 1, Allegro</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7571671</integer>
+			<key>Total Time</key><integer>473208</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:31Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:55Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>528</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach%20-%20Violin%20Concerto%20No2,%201,%20Allegro.MP3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>82</key>
+		<dict>
+			<key>Track ID</key><integer>82</integer>
+			<key>Name</key><string>3rd Brandenburg Concerto (Allegro)</string>
+			<key>Artist</key><string>Bach</string>
+			<key>Composer</key><string>Bach</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3243074</integer>
+			<key>Total Time</key><integer>202657</integer>
+			<key>Date Modified</key><date>2004-04-18T22:21:31Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>508</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Bach-%203rd%20Brandenburg%20Concerto%20(Allegro).mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>83</key>
+		<dict>
+			<key>Track ID</key><integer>83</integer>
+			<key>Name</key><string>Heinrich Schutz - Symphoniea Sacre</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4382442</integer>
+			<key>Total Time</key><integer>273867</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:26Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>574</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Heinrich%20Schutz%20-%20Symphoniea%20Sacre.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>84</key>
+		<dict>
+			<key>Track ID</key><integer>84</integer>
+			<key>Name</key><string>Piano Concerto No17-movt1</string>
+			<key>Artist</key><string>Mozart</string>
+			<key>Composer</key><string>Mozart</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11247829</integer>
+			<key>Total Time</key><integer>702955</integer>
+			<key>Date Modified</key><date>2004-04-18T22:26:58Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1130776948</integer>
+			<key>Play Date UTC</key><date>2004-04-07T11:45:48Z</date>
+			<key>Normalization</key><integer>305</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Mozart%20-%20Piano%20Concerto%20No17-movt1.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>85</key>
+		<dict>
+			<key>Track ID</key><integer>85</integer>
+			<key>Name</key><string>Requiem Aeternam</string>
+			<key>Artist</key><string>Mozart</string>
+			<key>Composer</key><string>Mozart</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6197612</integer>
+			<key>Total Time</key><integer>387317</integer>
+			<key>Date Modified</key><date>2004-04-18T22:27:13Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1130776447</integer>
+			<key>Play Date UTC</key><date>2004-04-07T11:54:09Z</date>
+			<key>Normalization</key><integer>913</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Mozart%20-%20Requiem%20Aeternam.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>86</key>
+		<dict>
+			<key>Track ID</key><integer>86</integer>
+			<key>Name</key><string>Violin Concerto 3</string>
+			<key>Artist</key><string>Mozart</string>
+			<key>Composer</key><string>Mozart</string>
+			<key>Genre</key><string>Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>9058509</integer>
+			<key>Total Time</key><integer>566125</integer>
+			<key>Date Modified</key><date>2004-04-18T22:27:22Z</date>
+			<key>Date Added</key><date>2004-03-07T23:13:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>355</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Classic/Mozart%20-%20Violin%20Concerto%203.mp3/</string>
+			<key>File Folder Count</key><integer>2</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>87</key>
+		<dict>
+			<key>Track ID</key><integer>87</integer>
+			<key>Name</key><string>Why Don't You Do Right?</string>
+			<key>Artist</key><string>Benny Goodman</string>
+			<key>Album</key><string>Legends Of Jazz</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>3134988</integer>
+			<key>Total Time</key><integer>192748</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2004-03-08T19:04:29Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:13Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1130770802</integer>
+			<key>Play Date UTC</key><date>2004-04-07T13:28:14Z</date>
+			<key>Normalization</key><integer>1995</integer>
+			<key>Compilation</key><true/>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Benny%20Goodman/Legends%20Of%20Jazz/10%20Why%20Don't%20You%20Do%20Right_.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>88</key>
+		<dict>
+			<key>Track ID</key><integer>88</integer>
+			<key>Name</key><string>After You've Gone</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3554077</integer>
+			<key>Total Time</key><integer>177684</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:30Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:13Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>5261</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20After%20You've%20Gone.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>89</key>
+		<dict>
+			<key>Track ID</key><integer>89</integer>
+			<key>Name</key><string>Alexander's Ragtime Band</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3568170</integer>
+			<key>Total Time</key><integer>178390</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:31Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:13Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>8060</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Alexander's%20Ragtime%20Band.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>90</key>
+		<dict>
+			<key>Track ID</key><integer>90</integer>
+			<key>Name</key><string>Baby Doll</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3632324</integer>
+			<key>Total Time</key><integer>181603</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:32Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:13Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>3901</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Baby%20Doll.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>91</key>
+		<dict>
+			<key>Track ID</key><integer>91</integer>
+			<key>Name</key><string>Back Water Blues</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3994640</integer>
+			<key>Total Time</key><integer>199706</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:32Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:13Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>3224</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Back%20Water%20Blues.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>92</key>
+		<dict>
+			<key>Track ID</key><integer>92</integer>
+			<key>Name</key><string>Empty Bed Blues (Pts 1 &#38; 2)</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>Collection</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7657288</integer>
+			<key>Total Time</key><integer>382850</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:34Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:13Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>703</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Empty%20Bed%20Blues%20(Parts%201%20&#38;%202).mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>93</key>
+		<dict>
+			<key>Track ID</key><integer>93</integer>
+			<key>Name</key><string>Golden Rule Blues</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3710152</integer>
+			<key>Total Time</key><integer>185495</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:34Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:13Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>4176</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Golden%20Rule%20Blues.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>94</key>
+		<dict>
+			<key>Track ID</key><integer>94</integer>
+			<key>Name</key><string>Hard Driving Papa</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3579128</integer>
+			<key>Total Time</key><integer>178938</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:35Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:14Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>2685</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Hard%20Driving%20Papa.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>95</key>
+		<dict>
+			<key>Track ID</key><integer>95</integer>
+			<key>Name</key><string>Hard Time Blues</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3890755</integer>
+			<key>Total Time</key><integer>194507</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:36Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:14Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>5002</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Hard%20Time%20Blues.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>96</key>
+		<dict>
+			<key>Track ID</key><integer>96</integer>
+			<key>Name</key><string>Honey Man Blues</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3891807</integer>
+			<key>Total Time</key><integer>194560</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:36Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:14Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>3187</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Honey%20Man%20Blues.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>97</key>
+		<dict>
+			<key>Track ID</key><integer>97</integer>
+			<key>Name</key><string>I Want Every Bit Of It</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3163620</integer>
+			<key>Total Time</key><integer>158171</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:37Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:14Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>4810</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20I%20Want%20Every%20Bit%20Of%20It.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>98</key>
+		<dict>
+			<key>Track ID</key><integer>98</integer>
+			<key>Name</key><string>Jazzbo Brown From Memphis Town</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4025431</integer>
+			<key>Total Time</key><integer>201247</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:37Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:14Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>3150</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Jazzbo%20Brown%20From%20Memphis%20Town.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>99</key>
+		<dict>
+			<key>Track ID</key><integer>99</integer>
+			<key>Name</key><string>Lonesome Desert Blues</string>
+			<key>Artist</key><string>Bessie Smith</string>
+			<key>Album</key><string>The Complete Recordings vol. 3</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4131922</integer>
+			<key>Total Time</key><integer>206576</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2004-04-18T13:01:38Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:14Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>2452</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Bessie%20Smith/Bessie%20Smith%20-%20Lonesome%20Desert%20Blues.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>110</key>
+		<dict>
+			<key>Track ID</key><integer>110</integer>
+			<key>Name</key><string>Stray Cat Strut</string>
+			<key>Artist</key><string>Brian Setzer Orchestra</string>
+			<key>Album</key><string>Hard Rock Live</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5042176</integer>
+			<key>Total Time</key><integer>252003</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>1998</integer>
+			<key>Date Modified</key><date>2004-04-18T22:08:48Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:15Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>The Joint, Las Vegas, NV</string>
+			<key>Normalization</key><integer>2258</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Big%20Bad%20Voodoo%20Daddy/Brian%20Setzer%20Orchestra%20'n%20Big%20Bad%20Voodoo%20Daddy%20Stray%20Cat%20Stru.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+        <dict>
+			<key>Track ID</key><integer>1115</integer>
+			<key>Name</key><string>I Get Around</string>
+			<key>Artist</key><string>Beach Boys</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2175552</integer>
+			<key>Total Time</key><integer>135941</integer>
+			<key>Date Modified</key><date>2004-04-18T12:59:20Z</date>
+			<key>Date Added</key><date>2004-03-08T06:04:04Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/Beach%20Boys/Beach%20Boys%20-%20I%20Get%20Around.mp3/</string>
+			<key>File Folder Count</key><integer>3</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<dict>
+			<key>Track ID</key><integer>5156</integer>
+			<key>Name</key><string>Wouldn't It Be Nice</string>
+			<key>Artist</key><string>The Beach Boys</string>
+			<key>Composer</key><string>B. Wilson - T. Asher</string>
+			<key>Album</key><string>Pet Sounds</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>2365572</integer>
+			<key>Total Time</key><integer>144660</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>16</integer>
+			<key>Year</key><integer>1966</integer>
+			<key>Date Modified</key><date>2004-04-18T20:38:47Z</date>
+			<key>Date Added</key><date>2004-04-18T20:38:22Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1129848468</integer>
+			<key>Play Date UTC</key><date>2004-04-18T05:40:28Z</date>
+			<key>Normalization</key><integer>1279</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/The%20Beach%20Boys/Pet%20Sounds/01%20Wouldn't%20It%20Be%20Nice.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<dict>
+			<key>Track ID</key><integer>185</integer>
+			<key>Name</key><string>Take The "A" Train</string>
+			<key>Artist</key><string>Duke &#38; Count</string>
+			<key>Album</key><string>Legends Of Jazz</string>
+			<key>Genre</key><string>Jazz</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>3698248</integer>
+			<key>Total Time</key><integer>227950</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2004-03-08T19:04:30Z</date>
+			<key>Date Added</key><date>2004-03-07T23:14:22Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Normalization</key><integer>912</integer>
+			<key>Compilation</key><true/>
+			<key>Location</key><string>file://localhost/G:/iTunes/Jazz/Compilations/Legends%20Of%20Jazz/02%20Take%20The%20_A_%20Train.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<dict>
+			<key>Track ID</key><integer>5156</integer>
+			<key>Name</key><string>ABCCEFGH</string>
+			<key>Artist</key><string>the Beach Boys</string>
+			<key>Composer</key><string>B. Wilson - T. Asher</string>
+			<key>Album</key><string>Pet Sounds</string>
+			<key>Genre</key><string>PopRock</string>
+			<key>Kind</key><string>AAC audio file</string>
+			<key>Size</key><integer>2365572</integer>
+			<key>Total Time</key><integer>144660</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>16</integer>
+			<key>Year</key><integer>1966</integer>
+			<key>Date Modified</key><date>2004-04-18T20:38:47Z</date>
+			<key>Date Added</key><date>2004-04-18T20:38:22Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1129848468</integer>
+			<key>Play Date UTC</key><date>2004-04-18T05:40:28Z</date>
+			<key>Normalization</key><integer>1279</integer>
+			<key>Location</key><string>file://localhost/G:/iTunes/PopRock/The%20Beach%20Boys/Pet%20Sounds/01%20Wouldn't%20It%20Be%20Nice.m4a/</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+
+		
+		
+		
+	</dict>
+	
+	
+	
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Library</string>
+			<key>Master</key><true/>
+			<key>Playlist ID</key><integer>5265</integer>
+			<key>Playlist Persistent ID</key><string>5CA8FAAF91C2B975</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>43160</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>43193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>43196</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Beatles Covers</string>
+			<key>Playlist ID</key><integer>15635</integer>
+			<key>Playlist Persistent ID</key><string>E170BC32E7B31520</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAEIAZQBhAHQAbABlAHMAIABDAG8AdgBl
+			AHIAcwAAAA4BAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAcAEIAZQBhAHQAbABlAHMAIABDAG8AdgBlAHIAcw==
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1481</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1486</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Classical</string>
+			<key>Playlist ID</key><integer>14963</integer>
+			<key>Playlist Persistent ID</key><string>82ECF3C931E1CC15</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAEMAbABhAHMAcwBpAGMAYQBs
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>66</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3791</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Early Rock &#38; Roll</string>
+			<key>Playlist ID</key><integer>15675</integer>
+			<key>Playlist Persistent ID</key><string>36CF5C1D52BEE45F</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4BAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAEUAYQByAGwAeQAgAFIAbwBjAGsAIAAm
+			ACAAUgBvAGwAbA==
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>3127</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4988</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Jazz</string>
+			<key>Playlist ID</key><integer>15024</integer>
+			<key>Playlist Persistent ID</key><string>83ECF3C931E1CC15</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEoAYQB6AHo=
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>5253</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5254</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>PopRock</string>
+			<key>Playlist ID</key><integer>10800</integer>
+			<key>Playlist Persistent ID</key><string>80ECF3C931E1CC15</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAFAAbwBwAFIAbwBjAGs=
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>43193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>43196</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Punk</string>
+			<key>Playlist ID</key><integer>15405</integer>
+			<key>Playlist Persistent ID</key><string>84ECF3C931E1CC15</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAFAAdQBuAGs=
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1869</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2393</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Reggae</string>
+			<key>Playlist ID</key><integer>10500</integer>
+			<key>Playlist Persistent ID</key><string>7FECF3C931E1CC15</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAFIAZQBnAGcAYQBl
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>3161</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3162</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3159</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

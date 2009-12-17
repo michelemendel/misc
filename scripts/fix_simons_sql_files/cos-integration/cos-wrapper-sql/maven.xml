@@ -1,0 +1,109 @@
+<project xmlns:j="jelly:core" xmlns:ant="jelly:ant" xmlns:define="jelly:define" 
+	xmlns:util="jelly:util" xmlns:maven="jelly:maven">
+
+  <goal name="ejb:gen">
+    <echo>Performing code-generation for ejb</echo>
+    <attainGoal name="wrappergen:generate"/>
+    <ant:copy todir="${maven.build.src}/java">
+      <ant:fileset dir="${maven.build.src}/java">
+        <ant:include name="**/*WrapperBean.xml"/>
+      </ant:fileset>
+			<ant:mapper type="glob" from="*WrapperBean.xml" 
+				to="*WrapperBean-meta.xml"/>
+    </ant:copy>
+    <attainGoal name="ejbgen:all"/>    
+    <ant:uptodate property="norecompile"
+      targetfile="${maven.build.dir}/${maven.ejb.final.name}">
+      <ant:srcfiles dir="${maven.build.src}/java"/>
+    </ant:uptodate>    
+    <j:if test="${!norecompile}">
+      <ant:path id="src.gen">
+        <ant:pathElement location="${maven.build.src}/java"/>
+      </ant:path>
+			<maven:addPath id="maven.compile.src.set" refid="src.gen"/>
+    </j:if>
+    
+    <!-- This will trigger compilation and tests -->
+    <echo>Invoking tests</echo>
+    <attainGoal name="test"/>    
+  </goal>
+  
+  
+  <!-- Here we pack the ejb our own way. This is a preGoal for ejb:install.--> 
+  <goal name="ejb:pack">
+    <!-- Extract the J2ee-dtds from our devtools maven-ejbgen-plugin -->
+		<unjar src="${pom.getDependencyPath('cosmos-devtools:maven-ejbgen-plugin')}" 
+               dest="${maven.build.dir}">
+      <patternset>
+        <include name="dtds/*"/>
+      </patternset>
+    </unjar>  
+    <!-- pack the ejb -->
+    <ant:mkdir dir="${maven.build.dir}/ejbs"/>
+    <ant:ejbjar srcdir="${maven.build.dir}/classes"
+			    descriptordir="${maven.build.src}/java" 
+			    flatdestdir="yes"
+			    compiler="${ejbc.compiler}"
+			    ejbcclass="weblogic.ejbc">
+      <ant:weblogic destdir="${maven.build.dir}/ejbs"
+                    compiler="${ejbc.compiler}"
+                    ejbcclass="weblogic.ejbc">
+        <ant:classpath>
+          <ant:path refid="maven.dependency.classpath"/>
+          <ant:pathelement path="${maven.build.dir}/classes"/>
+        </ant:classpath>
+      </ant:weblogic>
+      <ant:include name="com/telenor/**/*-ejb-jar.xml"/>
+      <ant:exclude name="com/telenor/**/*-weblogic-ejb-jar.xml"/>
+			<dtd 
+				publicid="-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" 
+         location= "${maven.build.dir}/dtds/ejb-jar_2_0.dtd" />
+      <dtd publicid="-//BEA Systems, Inc.//DTD WebLogic 6.0.0 EJB//EN"
+         location= "${maven.build.dir}/dtds/weblogic-ejb-jar.dtd" />      
+    </ant:ejbjar>
+    <!-- Correct artifact-name -->
+    <ant:copy file="${maven.build.dir}/ejbs/${wrapper.name}Wrapper.jar"
+              tofile="${maven.ejb.final.name}"/>
+  </goal>
+  <!-- Include idl-files (if any) in client-jar -->
+  <preGoal name="ejb:ejb-client">
+    <ant:copy todir="${maven.build.dest}">
+      <ant:fileset dir="${maven.build.dir}/src/java">
+        <ant:include name="**/*.idl"/>
+      </ant:fileset>
+    </ant:copy>
+  </preGoal>
+
+  
+  <!-- Inserts procedures into local database. -->  
+  <goal name="db:insert-procedures">
+    <j:if test="${!empty(dbname)}">
+      <ant:mkdir dir="${maven.build.dir}/db/bin"/>
+      <ant:delete file="${maven.build.dir}/db/insert-${dbname}.sql"/>
+
+      <attainGoal name="db:concat-sql"/>
+      
+      <ant:unjar src="${pom.getDependencyPath('cos:cos-test-core')}" dest="${maven.build.dir}/db">
+        <patternset>
+          <include name="bin/runisql"/>
+        </patternset>
+      </ant:unjar>        
+
+      <ant:exec dir="." executable="bash">
+        <ant:arg line="-- ${maven.build.dir}/db/bin/runisql"/>
+        <ant:arg line="-S LOCALHOST"/>
+        <ant:arg line="-U dbunit"/>
+        <ant:arg line="-P dbunit"/>
+        <ant:arg line="-D ${dbname}"/>
+        <ant:arg line="-i ${maven.build.dir}/db/insert-${dbname}.sql"/>
+      </ant:exec>
+    </j:if>
+  </goal>
+  
+  <goal name="db:concat-sql">
+    <ant:concat destfile="${maven.build.dir}/db/insert-${dbname}.sql" append="yes" force="yes">
+      <fileset dir="${maven.src.dir}/java" includes="${db.files.to.include}" excludes="${db.files.to.exclude}"/>
+    </ant:concat>
+  </goal>
+
+</project>

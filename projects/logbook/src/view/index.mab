@@ -1,0 +1,11 @@
+html do
+
+  head do
+    title "MyLogBook"
+  end
+  
+  body do
+      text "The arguments you have passed to this action are:" 
+  end
+  
+end

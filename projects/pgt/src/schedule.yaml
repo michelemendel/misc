@@ -1,0 +1,687 @@
+--- 
+- :slots: 
+  - :time: :s5
+    :matches: 
+    - :time: :s5
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 1
+      :teams: 
+        :div: j9798
+        :teams: 
+        - osl
+        - hel
+    - :time: :s5
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 2
+      :teams: 
+        :div: g9901
+        :teams: 
+        - kop
+        - mal
+    - :time: :s5
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 3
+      :teams: 
+        :div: j9394
+        :teams: 
+        - osl
+        - sto
+    - :time: :s5
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 4
+      :teams: 
+        :div: g9596
+        :teams: 
+        - kop_2
+        - osl_2
+    - :time: :s5
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 5
+      :teams: 
+        :div: j9596
+        :teams: 
+        - osl
+        - hel
+  - :time: :s6
+    :matches: 
+    - :time: :s6
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 1
+      :teams: 
+        :div: g9798
+        :teams: 
+        - got
+        - hel
+    - :time: :s6
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 2
+      :teams: 
+        :div: g9394
+        :teams: 
+        - got
+        - osl
+    - :time: :s6
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 3
+      :teams: 
+        :div: g9901
+        :teams: 
+        - hel
+        - osl
+    - :time: :s6
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 4
+      :teams: 
+        :div: g9596
+        :teams: 
+        - hel
+        - osl_1
+    - :time: :s6
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 5
+      :teams: 
+        :div: g9798
+        :teams: 
+        - kop_1
+        - kop_2
+  - :time: :s7
+    :matches: 
+    - :time: :s7
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 1
+      :teams: 
+        :div: j9798
+        :teams: 
+        - kop
+        - hel
+    - :time: :s7
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 2
+      :teams: 
+        :div: j9394
+        :teams: 
+        - kop
+        - sto
+    - :time: :s7
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 3
+      :teams: 
+        :div: j9596
+        :teams: 
+        - kop
+        - hel
+    - :time: :s7
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 4
+      :teams: 
+        :div: g9394
+        :teams: 
+        - kop
+        - hel
+    - :time: :s7
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 5
+      :teams: 
+        :div: g9901
+        :teams: 
+        - got
+        - mal
+  - :time: :s8
+    :matches: 
+    - :time: :s8
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 1
+      :teams: 
+        :div: g9596
+        :teams: 
+        - kop_1
+        - osl_2
+    - :time: :s8
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 2
+      :teams: 
+        :div: g9798
+        :teams: 
+        - sto
+        - hel
+    - :time: :s8
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 3
+      :teams: 
+        :div: g9901
+        :teams: 
+        - kop
+        - hel
+    - :time: :s8
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 4
+      :teams: 
+        :div: g9596
+        :teams: 
+        - kop_2
+        - hel
+    - :time: :s8
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 5
+      :teams: 
+        :div: g9798
+        :teams: 
+        - got
+        - kop_1
+  - :time: :s9
+    :matches: 
+    - :time: :s9
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 1
+      :teams: 
+        :div: j9798
+        :teams: 
+        - kop
+        - osl
+    - :time: :s9
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 2
+      :teams: 
+        :div: j9394
+        :teams: 
+        - kop
+        - osl
+    - :time: :s9
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 3
+      :teams: 
+        :div: j9596
+        :teams: 
+        - kop
+        - osl
+    - :time: :s9
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 4
+      :teams: 
+        :div: g9394
+        :teams: 
+        - got
+        - hel
+    - :time: :s9
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 1
+      :field: bane 5
+      :teams: 
+        :div: g9394
+        :teams: 
+        - osl
+        - kop
+  :day: Day 1
+- :slots: 
+  - :time: :s2
+    :matches: 
+    - :time: :s2
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 1
+      :teams: 
+        :div: g9901
+        :teams: 
+        - got
+        - osl
+    - :time: :s2
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 2
+      :teams: 
+        :div: g9596
+        :teams: 
+        - kop_1
+        - osl_1
+    - :time: :s2
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 3
+      :teams: 
+        :div: g9798
+        :teams: 
+        - sto
+        - kop_2
+    - :time: :s2
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 4
+      :teams: 
+        :div: g9394
+        :teams: 
+        - got
+        - kop
+    - :time: :s2
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 5
+      :teams: 
+        :div: g9901
+        :teams: 
+        - mal
+        - hel
+  - :time: :s3
+    :matches: 
+    - :time: :s3
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 1
+      :teams: 
+        :div: g9596
+        :teams: 
+        - osl_2
+        - hel
+    - :time: :s3
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 2
+      :teams: 
+        :div: g9798
+        :teams: 
+        - hel
+        - kop_1
+    - :time: :s3
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 3
+      :teams: 
+        :div: g9394
+        :teams: 
+        - hel
+        - osl
+    - :time: :s3
+      :day: Day 2
+      :field: bane 4
+    - :time: :s3
+      :day: Day 2
+      :field: bane 5
+  - :time: :s4
+    :matches: 
+    - :time: :s4
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 1
+      :teams: 
+        :div: g9901
+        :teams: 
+        - got
+        - hel
+    - :time: :s4
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 2
+      :teams: 
+        :div: g9901
+        :teams: 
+        - osl
+        - kop
+    - :time: :s4
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 3
+      :teams: 
+        :div: g9596
+        :teams: 
+        - osl_1
+        - kop_2
+    - :time: :s4
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 4
+      :teams: 
+        :div: g9798
+        :teams: 
+        - kop_2
+        - got
+    - :time: :s4
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 5
+      :teams: 
+        :div: g9798
+        :teams: 
+        - sto
+        - got
+  - :time: :s5
+    :matches: 
+    - :time: :s5
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 1
+      :teams: 
+        :div: g9596
+        :teams: 
+        - kop_1
+        - hel
+    - :time: :s5
+      :day: Day 2
+      :field: bane 2
+    - :time: :s5
+      :day: Day 2
+      :field: bane 3
+    - :time: :s5
+      :day: Day 2
+      :field: bane 4
+    - :time: :s5
+      :day: Day 2
+      :field: bane 5
+  - :time: :s6
+    :matches: 
+    - :time: :s6
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 1
+      :teams: 
+        :div: g9798
+        :teams: 
+        - sto
+        - kop_1
+    - :time: :s6
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 2
+      :teams: 
+        :div: g9901
+        :teams: 
+        - got
+        - kop
+    - :time: :s6
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 3
+      :teams: 
+        :div: g9901
+        :teams: 
+        - osl
+        - mal
+    - :time: :s6
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 4
+      :teams: 
+        :div: g9596
+        :teams: 
+        - osl_1
+        - osl_2
+    - :time: :s6
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 5
+      :teams: 
+        :div: g9798
+        :teams: 
+        - kop_2
+        - hel
+  - :time: :s7
+    :matches: 
+    - :time: :s7
+      :referees: Ref 5
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 1
+      :teams: 
+        :div: g9596
+        :teams: 
+        - kop_1
+        - kop_2
+    - :time: :s7
+      :referees: Ref 1
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 2
+      :teams: 
+    - :time: :s7
+      :referees: Ref 2
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 3
+      :teams: 
+    - :time: :s7
+      :referees: Ref 3
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 4
+      :teams: 
+    - :time: :s7
+      :referees: Ref 4
+      :score: 
+      - 0
+      - 0
+      :day: Day 2
+      :field: bane 5
+      :teams: 
+  :day: Day 2
+- :slots: 
+  - :time: :s3
+    :matches: 
+    - :time: :s3
+      :day: Day 3
+      :field: bane 1
+    - :time: :s3
+      :day: Day 3
+      :field: bane 2
+    - :time: :s3
+      :day: Day 3
+      :field: bane 3
+    - :time: :s3
+      :day: Day 3
+      :field: bane 4
+    - :time: :s3
+      :day: Day 3
+      :field: bane 5
+  - :time: :s4
+    :matches: 
+    - :time: :s4
+      :day: Day 3
+      :field: bane 1
+    - :time: :s4
+      :day: Day 3
+      :field: bane 2
+    - :time: :s4
+      :day: Day 3
+      :field: bane 3
+    - :time: :s4
+      :day: Day 3
+      :field: bane 4
+    - :time: :s4
+      :day: Day 3
+      :field: bane 5
+  - :time: :s5
+    :matches: 
+    - :time: :s5
+      :day: Day 3
+      :field: bane 1
+    - :time: :s5
+      :day: Day 3
+      :field: bane 2
+    - :time: :s5
+      :day: Day 3
+      :field: bane 3
+    - :time: :s5
+      :day: Day 3
+      :field: bane 4
+    - :time: :s5
+      :day: Day 3
+      :field: bane 5
+  - :time: :s6
+    :matches: 
+    - :time: :s6
+      :day: Day 3
+      :field: bane 1
+    - :time: :s6
+      :day: Day 3
+      :field: bane 2
+    - :time: :s6
+      :day: Day 3
+      :field: bane 3
+    - :time: :s6
+      :day: Day 3
+      :field: bane 4
+    - :time: :s6
+      :day: Day 3
+      :field: bane 5
+  :day: Day 3

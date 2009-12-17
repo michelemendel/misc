@@ -1,0 +1,43 @@
+/jazz/j00132.mp3  | 3:45 | Fats     Waller     | Ain't Misbehavin'
+/jazz/j00319.mp3  | 2:58 | Louis    Armstrong  | Wonderful World
+/bgrass/bg0732.mp3| 4:09 | Strength in Numbers | Texas Red
+
+
+--------------------------------------
+
+
+file = File.new("jb.txt")
+
+tmpFile = File.new("tmp.txt", "w")
+
+file.each_byte{ |f|
+	tmpFile.putc(f)
+}
+
+
+--------------------------------------
+
+
+#file.each_byte {|c| print c, " "}
+#file.each {|f| print f}
+
+#tmpFile = File.new("tmp.txt", "w")
+
+File.open("jb.txt")  do |f|
+
+	f.each_byte {|c| print c, "."  }
+	
+	
+	#f.each_line { |line| 
+		#print line
+		#tmpFile.
+	#}
+	f.rewind
+	f.each {|f| print f}
+
+end
+
+#IO.foreach("jb.txt") { |f| print f, "" }
+
+
+--------------------------------------

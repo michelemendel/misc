@@ -1,0 +1,8 @@
+
+http://www.felix-colibri.com/papers/colibri_utilities/the_coliget_search_engine/the_coliget_search_engine.html
+
+expression= term { OR term }
+term= factor { AND factor }
+factor= STRING | NOT factor | '(' expression ')'
+
+

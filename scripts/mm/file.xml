@@ -1,0 +1,45 @@
+<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning">
+	<file name="np-system-oversikt.ppt"/>
+	<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning/NRDB">
+		<file name="brukermanual_NRDBWeb2.pdf"/>
+		<file name="Interface_Spesification_Rev10_1.pdf"/>
+		<file name="np-spec-1-1-vedl.doc"/>
+		<file name="np-spec-1-2.doc"/>
+		<file name="NRDB presentasjon.ppt"/>
+		<file name="NRDB_NP_Web_v2_Spesifikasjon_Rev2.pdf"/>
+		<file name="RAPP-NP.RTF"/>
+	</dir>
+	<file name="Nummerportabilitet_stuff_342202.doc"/>
+	<file name="Numport Overall Presentation.ppt"/>
+	<file name="Numport processflows.ppt"/>
+	<file name="NumPort_komp_stac.ppt"/>
+	<file name="numport_simnr_cron.doc"/>
+	<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning/PT">
+		<file name="Administrative_rutiner_v106.pdf"/>
+		<file name="Administrative_rutiner_v106_Mobil.pdf"/>
+		<file name="admin_rutiner_pres_20020709.pdf"/>
+		<file name="AdmrutNPv2-030904.pdf"/>
+		<file name="AdmrutNPv2-Vedlegg1-030904.pdf"/>
+		<file name="mnp-rapp-201099.doc"/>
+		<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning/PT/RegulatoriskInformasjon">
+			<file name="PT-Prosedyre for tildeling av tilbyderkode for nummerportabilitet.htm"/>
+			<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning/PT/RegulatoriskInformasjon/PT-Prosedyre for tildeling av tilbyderkode for nummerportabilitet_files">
+				<file name="main_style.css"/>
+			</dir>
+			<file name="PT-Tildelte tilbyderkoder for nummerportabilitet.htm"/>
+			<file name="PT-Varsel om vedtak om innfring av tilbyderportabilitet for mobile nummer.htm"/>
+			<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning/PT/RegulatoriskInformasjon/PT-Varsel om vedtak om innfring av tilbyderportabilitet for mobile nummer_files">
+				<file name="main_style.css"/>
+			</dir>
+			<file name="PT-Vedtak av 23. oktober 1998 om innfring av tilbyderportabilitet for 8-sifrede geografiske og stedsuavhengige nummer.htm"/>
+			<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning/PT/RegulatoriskInformasjon/PT-Vedtak av 23. oktober 1998 om innfring av tilbyderportabilitet for 8-sifrede geografiske og stedsuavhengige nummer_files">
+				<file name="main_style.css"/>
+			</dir>
+			<file name="PT-Vedtak om endring av teknisk spesifikasjon for nummerportabilitet i Norge.htm"/>
+			<dir name="/jakarta-tomcat/webapps/webdav/cosmosweb/COS/Numport/Forvaltning/PT/RegulatoriskInformasjon/PT-Vedtak om endring av teknisk spesifikasjon for nummerportabilitet i Norge_files">
+				<file name="main_style.css"/>
+			</dir>
+			<file name="TILDELTE PREFIKS FOR VALG AV TILBYDER AV OFFENTLIG TELEFONTJENESTE.htm"/>
+		</dir>
+	</dir>
+</dir>

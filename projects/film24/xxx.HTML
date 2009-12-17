@@ -1,0 +1,271 @@
+
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="/styles.css">
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+</script>
+
+<script>
+function ShowTitle(ID,src)
+{
+	//window.open("Title.asp?ID="+ID+"&Src="+src,"Detail","left=0,top=0,width=600,height=600,scrollbars=yes")
+	window.location="Title.asp?ID="+ID+"&Src="+src
+}
+function wrTitle(ID,title,category,director,actors,year,picture,src)
+{
+	wth=550;hgt=550;
+	w='<td align=center valign="top"><a href="#" onclick="ShowTitle('+ID+',\''+src+'\');return(false)"><img src="'+picture+'" width="80" height="120" style="border: 1 solid black"></a><br><a href="List.asp?AddID='+ID+'&Src='+src+'" target="List"><img border="0" src="/img/add.gif"></a></td>'
+	w+='<td valign="top"><b><font size="3">'+title+'</font></b><br><br>'
+
+	w+='Kategori: ';
+	v=category.split(",")
+	for(i=0;i<v.length;i++)
+	{
+		s=v[i];n=s.length;
+		for(j=0; j<n && s.charAt(j  )==' '; j++);
+		for(k=n; k>j && s.charAt(k-1)==' '; k--);
+		s=s.substring(j,k);
+		if(i>0) w+=', '
+		w+='<a href="Titles.asp?Search=2&Val='+s+'">'+s+'</a>'
+	}
+	w+='<br>'
+	
+	w+='Regissør: ';
+	v=director.split(",")
+	for(i=0;i<v.length;i++)
+	{
+		s=v[i];n=s.length;
+		for(j=0; j<n && s.charAt(j  )==' '; j++);
+		for(k=n; k>j && s.charAt(k-1)==' '; k--);
+		s=s.substring(j,k);
+		if(i>0) w+=', '
+		w+='<a href="Titles.asp?Search=3&Val='+s+'">'+s+'</a>'
+	}
+	w+='<br>'
+
+	w+='Skuespillere: '
+	v=actors.split(",")
+	for(i=0;i<v.length;i++)
+	{
+		s=v[i];n=s.length;
+		for(j=0; j<n && s.charAt(j  )==' '; j++);
+		for(k=n; k>j && s.charAt(k-1)==' '; k--);
+		s=s.substring(j,k);
+		if(i>0) w+=', '
+		w+='<a href="Titles.asp?Search=4&Val='+s+'">'+s+'</a>'
+	}
+	w+='<br>'
+
+	w+='Produsert: '+year+'</td>'
+	document.write(w)
+}
+</script>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0>
+<tr>
+ <td colspan="2">
+  <ilayer src="/Top.htm" width="785" height="97" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></ilayer>
+  <iframe src="/Top.htm" width="785" height="97" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" height="5px"><x></td>
+</tr>
+<tr>
+  <td bgcolor="#E7E8E9" valign="top">
+    <ilayer src="/Lft.htm" width="128" height="1100" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></ilayer>
+    <iframe src="/Lft.htm" width="128" height="1100" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br>
+  </td>
+  <td valign="top" bgcolor=white style="padding-top:5px;padding-left:10px;padding-right:10px">
+
+<table width="630" cellspacing="0" cellpadding="0">
+	<tr height="20">
+		<td bgcolor="#B4BCC2" width="630" style="border: 1 solid #000000">&nbsp;&nbsp;<b>Velg filmer</b></td>
+	</tr>
+</table><br>
+
+<table width="630">
+	<col width="25%">
+	<col width="50%">
+	<col width="25%">
+	<tr>
+		<td align="left"></td>
+		<td align="center">Finner du ikke filmen du leter etter? <a href="Wish.asp" target="_top">Tips oss!</a></td>
+		<td align="right"><a href="?Pg=1&Search=0&Val=&Val2="><img border=0 src="/Img/Next.gif"></a></td>
+	</tr>
+	<tr>
+		<td align="center" colspan="3">Har du prøvd vår <a href="MovieMatcher.asp">MovieMatcher</a>?</td>
+	</tr>
+</table>
+<table width="630">
+	<col width="85">
+	<col>
+	<col width="85">
+	<col>
+	<tr>
+		<td bgcolor="#C0C0C0" height="1" colspan="4"><x></td>
+	</tr>
+<script>
+
+document.write('<tr>')
+wrTitle(7743,"Master and Commander: The Far Side of the World","Action, Eventyr","Peter Weir","Russell Crowe,Paul Bettany,Billy Boyd,James D'Arcy","2003","/Cover/7743.jpg","Browse")
+
+wrTitle(7577,"National Geographic - Super Croc","Dokumentar","-","-","2001","/Cover/7577.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7554,"The Hunted (1995)","Action","Jonathan Lawton","Christopher Lambert,John Lone,Joan Chen","1994","/Cover/7554.jpg","Browse")
+
+wrTitle(7189,"Festen","Drama","Thomas Vinterberg","Ulrich Thomsen,Henning Moritzen,Thomas Bo Larsen,Paprika Steen,Birthe Neumann,Trine Dyrholm,Helle Dolleris,Therese Glahn","1998","/Cover/7189.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7287,"Identity","Grøsser, Thriller","James Mangold","John Cusack,Ray Liotta,Amanda Peet,John Hawkes,Jake Busey,John C. McGinley,William Lee Scott,Clea DuVall","2003","/Cover/7287.jpg","Browse")
+
+wrTitle(7757,"The Human Stain","Drama","Robert Benton","Anthony Hopkins,Nicole Kidman,Ed Harris,Gary Sinise","2003","http://www.snurrfilm.no/ps/H/3645.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7597,"Lord of the Dance","Musikk","David Mallet","Michael Flatley","1996","/Cover/7597.jpg","Browse")
+
+wrTitle(7672,"Sgt. Bilko","Komedie","Jonathan Lynn","Dan Aykroyd,Steve Martin,Phil Hartman,Glenne Headly","1996","/Cover/7672.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7084,"Antwone Fisher","Drama","Denzel Washington","Derek Luke,Joy Bryant,Denzel Washington,Salli Richardson,Earl Billings,Kevin Connolly,Viola Davis,Rainoldo Gooding","2002","/Cover/7084.jpg","Browse")
+
+wrTitle(7478,"A Chorus Line","Drama,Musikal","Richard Attenborough","Michael Douglas,Terrence Mann,Alyson Reed,Cameron English,Audrey Landers,Vicki Frederick,Michael Belvins,Yamil Borges","1985","/Cover/7478.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7697,"Matchstick Men -Førsteklasses Svindlere","Drama, Komedie","Ridley Scott","Nicolas Cage,Sam Rockwell,Robert Zemeckis,Steve Starkey","2003","/Cover/7697.jpg","Browse")
+
+wrTitle(7599,"Feet of Flames","Musikk","Michael Flatley","Michael Flatley","1998","/Cover/7599.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7473,"Kjærlighet trenger ingen ord","Drama","Randa Haines","William Hurt,Marlee Matlin,Piper Laurie,Philip Bosco","1986","/Cover/7473.jpg","Browse")
+
+wrTitle(7366,"Crime Spree","Komedie, Krim","Brad Mirman","Gérard Depardieu,Johnny Hallyday,Renaud,Harvey Keitel,Richard Bohringer,Saïd Taghmaoui,Stéphane Freiss,Albert Dray","2003","/Cover/7366.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7191,"Alt en jente kan ønske seg","Komedie, Romantikk","Dennie Gordon","Amanda Bynes,Colin Firth,Kelly Preston,Eileen Atkins,Anna Chancellor,Jonathan Pryce,Oliver James,Christina Cole","2003","/Cover/7191.jpg","Browse")
+
+wrTitle(7698,"Mors Elling","Drama, Komedie","Eva Isaksen","Per Christian Ellefsen,Grete Nordrå,Helge Reiss,Christin Borge,Per Schaaning,Lena Meieran","2003","/Cover/7698.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7609,"Arthur","Komedie","Steve Gordon","Dudley Moore,Liza Minelli,John Gielgud,Jill Eikenberry","1981","/Cover/7609.jpg","Browse")
+
+wrTitle(7569,"Livet er en schlager","Romantikk, Drama","Susanne Bier","Helena Bergström,Jonas Karlsson,Thomas Hanzon,Björn Kjellman,Johan Ulveson,Katarina Ewerlöf,Regina Lund,Lasse Kroner","2000","/Cover/7569.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+document.write('<tr>')
+wrTitle(7000,"Taxi 3","Action","Gérard Krawczyk","Samy Naceri,Frédéric Diefenthal,Emma Sjöberg,Bernard Farcy,Marion Cotillard,Edouard Montoute","2003","/Cover/7000.jpg","Browse")
+
+wrTitle(7196,"Bruce Almighty","Komedie","Tom Shadyac","Jim Carrey,Jennifer Aniston,Morgan Freeman,Lisa Ann Walter,Mark Adair-Rios,Sydney Anderson,Catherine Bell,Brady Benson","2003","/Cover/7196.jpg","Browse")
+
+document.write('</tr>')
+document.write('<tr><td bgcolor="#C0C0C0" height="1" colspan="4"><x></td></tr>')
+
+</script>
+</table>
+<table width="630">
+	<col width="25%">
+	<col width="50%">
+	<col width="25%">
+	<tr>
+		<td align="center" colspan="3">Har du prøvd vår <a href="MovieMatcher.asp">MovieMatcher</a>?</td>
+	</tr>
+	<tr>
+		<td align="left"></td>
+		<td align="center">Finner du ikke filmen du leter etter? <a href="Wish.asp" target="_top">Tips oss!</a></td>
+		<td align="right"><a href="?Pg=1&Search=0&Val=&Val2="><img border=0 src="/Img/Next.gif"></a></td>
+	</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor=white>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<center>
+© 2000-2004 Film24.no. All rights reserved.<br>
+	<form onsubmit="window.open('/Tips.asp?Rcv='+escape(this.Rcv.value)+'&amp;Snd='+escape(this.Snd.value),null,'left='+(screen.width-200)/2+',top='+(screen.height-150)/2+',width=200,height=150');return(false)">
+		<table align="center">
+			<tr>
+				<td>Tips en venn:</td>
+				<td><input size="20" name="Rcv"></td>
+				<td>Ditt navn:</td>
+				<td><input size="20" name="Snd"></td>
+				<td><input type="submit" value="Send"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</td>
+</tr>
+</table>
+
+</body>
+
+<script language="JavaScript">
+<!--
+
+window.open = SymRealWinOpen;
+
+//-->
+</script>
+

@@ -1,0 +1,9 @@
+
+Mike's Weblog
+http://www.ntecs.de/blog/Tech/ComputerScience/SyncPrim.rdoc/style/print
+
+Sample
+http://www.ruby-talk.org/cgi-bin/scat.rb/ruby/ruby-talk/15023
+
+Distributed UNIX pipes with DRb
+http://www.rubygarden.org/ruby?DistributedPipes

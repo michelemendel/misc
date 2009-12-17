@@ -1,0 +1,988 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0054)http://www.learningruby.com/optparsedocumentation.html -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>OptionParser for Ruby</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+href="OptionParser for Ruby_files/rd.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1276" name=GENERATOR></HEAD>
+<BODY>
+<H1><A id=label:0 name=label:0>Summary</A></H1><!-- RDLabel: "Summary" -->
+<P>Library for command line option analysis.</P>
+<P>features:</P>
+<OL>
+  <LI>It is possible &lt;option switch of a short form and a long form&gt; to 
+  exist together. It is also possible in one to bring the switch of a short form 
+  together. 
+  <LI>It is possible to write bringing specification and the handler of the 
+  switch together respectively in one place. 
+  <LI>The argument of the switch is converted into the class which automatically 
+  specifies it. 
+  <LI>The option summary can be made. 
+  <LI>The option can be added on the way later. </LI></OL>
+<H2><A id=label:1 name=label:1>Class tree</A></H2><!-- RDLabel: "Class tree" -->
+<UL>
+  <LI><A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:41">OptionParser</A> 
+  front end 
+  <LI><A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:4">OptionParser::Switch</A> 
+  each switches 
+  <LI><A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:12">OptionParser::List</A> 
+  options list 
+  <LI>
+  <P><A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:150">OptionParser::ParseError</A> 
+  errors on parsing</P>
+  <UL>
+    <LI><A 
+    href="http://www.learningruby.com/optparsedocumentation.html#label:161">OptionParser::AmbiguousOption</A> 
+
+    <LI><A 
+    href="http://www.learningruby.com/optparsedocumentation.html#label:163">OptionParser::NeedlessArgument</A> 
+
+    <LI><A 
+    href="http://www.learningruby.com/optparsedocumentation.html#label:165">OptionParser::MissingArgument</A> 
+
+    <LI><A 
+    href="http://www.learningruby.com/optparsedocumentation.html#label:167">OptionParser::InvalidOption</A> 
+
+    <LI>
+    <P><A 
+    href="http://www.learningruby.com/optparsedocumentation.html#label:169">OptionParser::InvalidArgument</A></P>
+    <UL>
+      <LI><A 
+      href="http://www.learningruby.com/optparsedocumentation.html#label:171">OptionParser::AmbiguousArgument</A> 
+      </LI></UL></LI></UL></LI></UL>
+<H2><A id=label:2 name=label:2>Object relations</A></H2><!-- RDLabel: "Object relations" --><PRE>+--------------+
+| OptionParser |&lt;&gt;-----+
++--------------+       |          	         +--------+
+                       |          	       ,-| Switch |
+     on_head --------&gt;+---------------+    /  +--------+
+     accept/reject --&gt;| List        	 |&lt;|&gt;-
+                      |             	 |&lt;|&gt;-  +----------+
+     on -------------&gt;+---------------+    `-| argument |
+                      :             	 :      |  class   |
+                      +---------------+      |==========|
+     on_tail --------&gt;|             	 |      |pattern   |
+                      +---------------+      |----------|
+OptionParser.accept -&gt;| DefaultList 	 |      |converter |
+             reject   |(shared between|      +----------+
+                      | all instances)|
+                      +---------------+</PRE>
+<H1><A id=label:3 name=label:3>Classes &amp; Modules</A></H1><!-- RDLabel: "Classes & Modules" -->
+<H2><A id=label:4 name=label:4><A id=index:0 
+name=index:0>OptionParser::Switch</A></A></H2><!-- RDLabel: "OptionParser::Switch" -->
+<P>Individual switch class.</P>
+<H3><A id=label:5 name=label:5>Instance methods</A></H3><!-- RDLabel: "Instance methods" -->
+<DL>
+  <DT><A id=label:6 
+  name=label:6><CODE>OptionParser::Switch#parse(<VAR>arg</VAR>, <VAR>val</VAR>) 
+  {<VAR>semi</VAR>-<VAR>error</VAR> <VAR>handler</VAR>}</CODE></A><!-- RDLabel: "OptionParser::Switch#parse" --> 
+  <DD>
+  <P>Parses argument, convert and returns <VAR>arg</VAR>, <VAR>block</VAR> and 
+  result of conversion.</P>
+  <DL>
+    <DT><A id=label:7 name=label:7>Arguments to <VAR>@conv</VAR> </A><!-- RDLabel: "Arguments to @conv
+" -->
+    <DD>
+    <P>substrings matched to <VAR>@pattern</VAR>, <VAR>$&amp;</VAR>, 
+    <VAR>$1</VAR>, <VAR>$2</VAR> and so on.</P>
+    <DT><A id=label:8 name=label:8>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:9 name=label:9><VAR>arg</VAR> </A><!-- RDLabel: "arg
+" -->
+      <DD>
+      <P>argument string follows the switch.</P>
+      <DT><A id=label:10 name=label:10><VAR>val</VAR> </A><!-- RDLabel: "val
+" -->
+      <DD>
+      <P>following argument.</P>
+      <DT><A id=label:11 name=label:11><CODE>block</CODE> </A><!-- RDLabel: "block
+" -->
+      <DD>
+      <P><CODE>yields</CODE> at semi-error condition, instead of raises 
+      exception.</P></DD></DL></DD></DL></DD></DL>
+<H2><A id=label:12 name=label:12><!-- Index, but conflict -->OptionParser::List<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::List" -->
+<P>Simple option list providing mapping from short and/or long option string to 
+<A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:4">OptionParser::Switch</A>, 
+and mapping from acceptable argument to matching pattern and converter pair. 
+Also provides summary feature.</P>
+<H3><A id=label:13 name=label:13>Class methods</A></H3><!-- RDLabel: "Class methods" -->
+<H3><A id=label:14 name=label:14>Instance methods</A></H3><!-- RDLabel: "Instance methods" -->
+<DL>
+  <DT><A id=label:15 name=label:15><CODE>OptionParser::List#atype</CODE></A><!-- RDLabel: "OptionParser::List#atype" --> 
+
+  <DD>
+  <P>Map from acceptable argument types to pattern and converter pairs.</P>
+  <DT><A id=label:16 name=label:16><CODE>OptionParser::List#short</CODE></A><!-- RDLabel: "OptionParser::List#short" --> 
+
+  <DD>
+  <P>Map from short style option switches to actual switch objects.</P>
+  <DT><A id=label:17 name=label:17><CODE>OptionParser::List#long</CODE></A><!-- RDLabel: "OptionParser::List#long" --> 
+
+  <DD>
+  <P>Map from long style option switches to actual switch objects.</P>
+  <DT><A id=label:18 name=label:18><CODE>OptionParser::List#list</CODE></A><!-- RDLabel: "OptionParser::List#list" --> 
+
+  <DD>
+  <P>List of all switches and summary string.</P></DD></DL>
+<DL>
+  <DT><A id=label:19 
+  name=label:19><CODE>OptionParser::List#prepend(<VAR>switch</VAR>, 
+  <VAR>short_opts</VAR>, <VAR>long_opts</VAR>, 
+<VAR>nolong_opts</VAR>)</CODE></A><!-- RDLabel: "OptionParser::List#prepend" --> 
+
+  <DD>
+  <P>Inserts <VAR>switch</VAR> at head of the list, and associates short, long 
+  and negated long options.</P>
+  <DT><A id=label:20 
+  name=label:20><CODE>OptionParser::List#append(<VAR>switch</VAR>, 
+  <VAR>short_opts</VAR>, <VAR>long_opts</VAR>, 
+<VAR>nolong_opts</VAR>)</CODE></A><!-- RDLabel: "OptionParser::List#append" --> 
+
+  <DD>
+  <P>Appends <VAR>switch</VAR> at tail of the list, and associates short, long 
+  and negated long options.</P>
+  <DL>
+    <DT><A id=label:21 name=label:21>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:22 name=label:22><VAR>switch</VAR> </A><!-- RDLabel: "switch
+" -->
+      <DD>
+      <P><A 
+      href="http://www.learningruby.com/optparsedocumentation.html#label:4">OptionParser::Switch</A> 
+      instance to be inserted.</P>
+      <DT><A id=label:23 name=label:23><VAR>short_opts</VAR> </A><!-- RDLabel: "short_opts
+" -->
+      <DD>
+      <P>list of short style options.</P>
+      <DT><A id=label:24 name=label:24><VAR>long_opts</VAR> </A><!-- RDLabel: "long_opts
+" -->
+      <DD>
+      <P>list of long style options.</P>
+      <DT><A id=label:25 name=label:25><VAR>nolong_opts</VAR> </A><!-- RDLabel: "nolong_opts
+" -->
+      <DD>
+      <P>list of long style options with <CODE>"no-"</CODE> 
+    prefix.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:26 
+  name=label:26><CODE>OptionParser::List#search(<VAR>id</VAR>, <VAR>key</VAR>) 
+  [{<VAR>block</VAR>}]</CODE></A><!-- RDLabel: "OptionParser::List#search" --> 
+  <DD>
+  <P>Searches <VAR>key</VAR> in <VAR>id</VAR> list.</P>
+  <DL>
+    <DT><A id=label:27 name=label:27>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:28 name=label:28><VAR>id</VAR> </A><!-- RDLabel: "id
+" -->
+      <DD>
+      <P>searching list.</P>
+      <DT><A id=label:29 name=label:29><VAR>k</VAR> </A><!-- RDLabel: "k
+" -->
+      <DD>
+      <P>searching key.</P>
+      <DT><A id=label:30 name=label:30><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P>yielded with the found value when 
+succeeded.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:31 
+  name=label:31><CODE>OptionParser::List#complete(<VAR>id</VAR>, <VAR>opt</VAR>, 
+  *<VAR>pat</VAR>, &amp;<VAR>block</VAR>)</CODE></A><!-- RDLabel: "OptionParser::List#complete" --> 
+
+  <DD>
+  <P>Searches list <VAR>id</VAR> for <VAR>opt</VAR> and <VAR>*pat</VAR>.</P>
+  <DL>
+    <DT><A id=label:32 name=label:32>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:33 name=label:33><VAR>id</VAR> </A><!-- RDLabel: "id
+" -->
+      <DD>
+      <P>searching list.</P>
+      <DT><A id=label:34 name=label:34><VAR>opt</VAR> </A><!-- RDLabel: "opt
+" -->
+      <DD>
+      <P>searching key.</P>
+      <DT><A id=label:35 name=label:35><VAR>*pat</VAR> </A><!-- RDLabel: "*pat
+" -->
+      <DD>
+      <P>optional pattern for completion.</P>
+      <DT><A id=label:36 name=label:36><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P>yielded with the found value when 
+succeeded.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:37 
+  name=label:37><CODE>OptionParser::List#summarize(*<VAR>args</VAR>) 
+  {...}</CODE></A><!-- RDLabel: "OptionParser::List#summarize" --> 
+  <DD>
+  <P>Making summary table, yields the <CODE>block</CODE> with each lines. Each 
+  elements of <CODE>@list</CODE> should be able to <CODE>summarize</CODE>.</P>
+  <DL>
+    <DT><A id=label:38 name=label:38>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:39 name=label:39><VAR>args</VAR> </A><!-- RDLabel: "args
+" -->
+      <DD>
+      <P>passed to elements#summarize through.</P>
+      <DT><A id=label:40 name=label:40><CODE>block</CODE> </A><!-- RDLabel: "block
+" -->
+      <DD>
+      <P>to be passed each lines(without newline).</P></DD></DL></DD></DL></DD></DL>
+<H2><A id=label:41 name=label:41><!-- Index, but conflict -->OptionParser<!-- Index end --></A></H2><!-- RDLabel: "OptionParser" -->
+<P>The front-end of <CODE>OptionParser</CODE>.</P>
+<H3><A id=label:42 name=label:42>Constants</A></H3><!-- RDLabel: "Constants" -->
+<DL>
+  <DT><A id=label:43 name=label:43><CODE>OptionParser::ArgumentStyle</CODE></A><!-- RDLabel: "OptionParser::ArgumentStyle" --> 
+
+  <DD>
+  <P>Enumeration of acceptable argument styles; possible values are:</P>
+  <DL>
+    <DT><A id=label:44 name=label:44>OptionParser::NO_ARGUMENT </A><!-- RDLabel: "OptionParser::NO_ARGUMENT
+" -->
+    <DD>
+    <P>the switch takes no arguments. (<CODE>:NONE</CODE>) </P>
+    <DT><A id=label:45 name=label:45>OptionParser::REQUIRED_ARGUMENT </A><!-- RDLabel: "OptionParser::REQUIRED_ARGUMENT
+" -->
+    <DD>
+    <P>the switch requires an argument. (<CODE>:REQUIRED</CODE>)</P>
+    <DT><A id=label:46 name=label:46>OptionParser::OPTIONAL_ARGUMENT </A><!-- RDLabel: "OptionParser::OPTIONAL_ARGUMENT
+" -->
+    <DD>
+    <P>the switch requires an optional argument, that is, may take or not. 
+    (<CODE>:OPTIONAL</CODE>)</P></DD></DL>
+  <P>Use like <CODE>--switch=argument</CODE>(long style) or 
+  <CODE>-Xargument</CODE>(short style). For short style, only portion matched to 
+<!-- Reference, RDLabel "argument pattern" doesn't exist --><EM 
+  class=label-not-found>argument pattern</EM><!-- Reference end --> is dealed as 
+  argument.</P></DD></DL>
+<H3><A id=label:47 name=label:47>Class methods</A></H3><!-- RDLabel: "Class methods" -->
+<DL>
+  <DT><A id=label:48 name=label:48><CODE>OptionParser.with([<VAR>banner</VAR>[, 
+  <VAR>width</VAR>[, <VAR>indent</VAR>]]]) [{...}]</CODE></A><!-- RDLabel: "OptionParser.with" --> 
+  <DD>
+  <P>Initializes new instance, and evaluates the block in context of the 
+  instance if called as iterator. This behavior is equivalent to older 
+  <CODE>new</CODE>. This is <EM>deprecated</EM> method.</P>
+  <P>cf. <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:56">OptionParser.new</A></P>
+  <DL>
+    <DT><A id=label:49 name=label:49>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:50 name=label:50><VAR>banner</VAR> </A><!-- RDLabel: "banner
+" -->
+      <DD>
+      <P>banner message.</P>
+      <DT><A id=label:51 name=label:51><VAR>width</VAR> </A><!-- RDLabel: "width
+" -->
+      <DD>
+      <P>summary width.</P>
+      <DT><A id=label:52 name=label:52><VAR>indent</VAR> </A><!-- RDLabel: "indent
+" -->
+      <DD>
+      <P>summary indent.</P>
+      <DT><A id=label:53 name=label:53><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P>to be evaluated in the new instance 
+context.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:54 name=label:54><CODE>OptionParser.inc(<VAR>arg</VAR>[, 
+  <VAR>default</VAR>])</CODE></A><!-- RDLabel: "OptionParser.inc" --> 
+  <DT><A id=label:55 name=label:55><CODE>OptionParser#inc(<VAR>arg</VAR>[, 
+  <VAR>default</VAR>])</CODE></A><!-- RDLabel: "OptionParser#inc" --> 
+  <DD>
+  <P>Returns incremented value of <VAR>default</VAR> according to 
+  <VAR>arg</VAR>.</P></DD></DL>
+<DL>
+  <DT><A id=label:56 name=label:56><CODE>OptionParser.new([<VAR>banner</VAR>[, 
+  <VAR>width</VAR>[, <VAR>indent</VAR>]]]) [{...}]</CODE></A><!-- RDLabel: "OptionParser.new" --> 
+  <DD>
+  <P>Initializes the instance, and yields itself if called as iterator.</P>
+  <DL>
+    <DT><A id=label:57 name=label:57>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:58 name=label:58><VAR>banner</VAR> </A><!-- RDLabel: "banner
+" -->
+      <DD>
+      <P>banner message.</P>
+      <DT><A id=label:59 name=label:59><VAR>width</VAR> </A><!-- RDLabel: "width
+" -->
+      <DD>
+      <P>summary width.</P>
+      <DT><A id=label:60 name=label:60><VAR>indent</VAR> </A><!-- RDLabel: "indent
+" -->
+      <DD>
+      <P>summary indent.</P>
+      <DT><A id=label:61 name=label:61><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P>to be evaluated in the new instance 
+context.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:62 
+  name=label:62><CODE>OptionParser.terminate([<VAR>arg</VAR>])</CODE></A><!-- RDLabel: "OptionParser.terminate" --> 
+
+  <DD>
+  <P>Terminates option parsing. Optional parameter <VAR>arg</VAR> would be 
+  pushed back if given.</P>
+  <DL>
+    <DT><A id=label:63 name=label:63>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:64 name=label:64><VAR>arg</VAR> </A><!-- RDLabel: "arg
+" -->
+      <DD>
+      <P>string pushed back to be first non-option 
+  argument</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:65 name=label:65><CODE>OptionParser.accept(<VAR>t</VAR>, 
+  [<VAR>pat</VAR>]) {...}</CODE></A><!-- RDLabel: "OptionParser.accept" --> 
+  <DT><A id=label:66 name=label:66><CODE>OptionParser#accept(<VAR>t</VAR>, 
+  [<VAR>pat</VAR>]) {...}</CODE></A><!-- RDLabel: "OptionParser#accept" --> 
+  <DD>
+  <P>Directs to accept specified class argument.</P>
+  <DL>
+    <DT><A id=label:67 name=label:67>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:68 name=label:68><VAR>t</VAR> </A><!-- RDLabel: "t
+" -->
+      <DD>
+      <P>argument class specifier, any object including Class.</P>
+      <DT><A id=label:69 name=label:69><VAR>pat</VAR> </A><!-- RDLabel: "pat
+" -->
+      <DD>
+      <P>pattern for argument, defaulted to <VAR>t</VAR> if it respond to 
+      <CODE>match</CODE>.</P>
+      <DT><A id=label:70 name=label:70><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P>receives argument string and should be convert to desired 
+      class.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:71 
+  name=label:71><CODE>OptionParser.reject(<VAR>t</VAR>)</CODE></A><!-- RDLabel: "OptionParser.reject" --> 
+
+  <DT><A id=label:72 
+  name=label:72><CODE>OptionParser#reject(<VAR>t</VAR>)</CODE></A><!-- RDLabel: "OptionParser#reject" --> 
+
+  <DD>
+  <P>Directs to reject specified class argument.</P>
+  <DL>
+    <DT><A id=label:73 name=label:73>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:74 name=label:74><VAR>t</VAR> </A><!-- RDLabel: "t
+" -->
+      <DD>
+      <P>argument class specifier, any object including 
+  Class.</P></DD></DL></DD></DL></DD></DL>
+<H3><A id=label:75 name=label:75>Instance methods</A></H3><!-- RDLabel: "Instance methods" -->
+<DL>
+  <DT><A id=label:76 name=label:76><CODE>OptionParser#banner</CODE></A><!-- RDLabel: "OptionParser#banner" --> 
+
+  <DT><A id=label:77 
+  name=label:77><CODE>OptionParser#banner=(<VAR>heading</VAR>)</CODE></A><!-- RDLabel: "OptionParser#banner=" --> 
+
+  <DD>
+  <P>Heading banner preceding summary.</P>
+  <DT><A id=label:78 name=label:78><CODE>OptionParser#summary_width</CODE></A><!-- RDLabel: "OptionParser#summary_width" --> 
+
+  <DT><A id=label:79 
+  name=label:79><CODE>OptionParser#summary_width=(<VAR>width</VAR>)</CODE></A><!-- RDLabel: "OptionParser#summary_width=" --> 
+
+  <DD>
+  <P>Width for option list portion of summary. Must be <CODE>Numeric</CODE>.</P>
+  <DT><A id=label:80 name=label:80><CODE>OptionParser#summary_indent</CODE></A><!-- RDLabel: "OptionParser#summary_indent" --> 
+
+  <DT><A id=label:81 
+  name=label:81><CODE>OptionParser#summary_indent=(<VAR>indent</VAR>)</CODE></A><!-- RDLabel: "OptionParser#summary_indent=" --> 
+
+  <DD>
+  <P>Indentation for summary. Must be <CODE>String</CODE> (or have <CODE>+ 
+  String</CODE>).</P>
+  <DT><A id=label:82 name=label:82><CODE>OptionParser#program_name</CODE></A><!-- RDLabel: "OptionParser#program_name" --> 
+
+  <DT><A id=label:83 
+  name=label:83><CODE>OptionParser#program_name=(<VAR>name</VAR>)</CODE></A><!-- RDLabel: "OptionParser#program_name=" --> 
+
+  <DD>
+  <P>Program name to be emitted in error message and default banner, defaulted 
+  to <CODE>$0</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:84 name=label:84><CODE>OptionParser#version</CODE></A><!-- RDLabel: "OptionParser#version" --> 
+
+  <DT><A id=label:85 
+  name=label:85><CODE>OptionParser#version=(<VAR>ver</VAR>)</CODE></A><!-- RDLabel: "OptionParser#version=" --> 
+
+  <DD>
+  <P>Version.</P>
+  <DT><A id=label:86 name=label:86><CODE>OptionParser#release</CODE></A><!-- RDLabel: "OptionParser#release" --> 
+
+  <DT><A id=label:87 
+  name=label:87><CODE>OptionParser#release=(<VAR>rel</VAR>)</CODE></A><!-- RDLabel: "OptionParser#release=" --> 
+
+  <DD>
+  <P>Release code.</P>
+  <DT><A id=label:88 name=label:88><CODE>OptionParser#ver</CODE></A><!-- RDLabel: "OptionParser#ver" --> 
+
+  <DD>
+  <P>Returns version string from <!-- Reference, RDLabel "program_name" doesn't exist --><EM 
+  class=label-not-found>program_name</EM><!-- Reference end -->, 
+  <CODE>version</CODE> and <CODE>release</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:89 name=label:89><CODE>OptionParser#top</CODE></A><!-- RDLabel: "OptionParser#top" --> 
+
+  <DD>
+  <P>Subject of <!-- Reference, RDLabel "on" doesn't exist --><EM 
+  class=label-not-found>on</EM><!-- Reference end -->/<!-- Reference, RDLabel "on_head" doesn't exist --><EM 
+  class=label-not-found>on_head</EM><!-- Reference end -->, <!-- Reference, RDLabel "accept" doesn't exist --><EM 
+  class=label-not-found>accept</EM><!-- Reference end -->/<!-- Reference, RDLabel "reject" doesn't exist --><EM 
+  class=label-not-found>reject</EM><!-- Reference end -->.</P></DD></DL>
+<DL>
+  <DT><A id=label:90 name=label:90><CODE>OptionParser#base</CODE></A><!-- RDLabel: "OptionParser#base" --> 
+
+  <DD>
+  <P>Subject of <!-- Reference, RDLabel "on_tail" doesn't exist --><EM 
+  class=label-not-found>on_tail</EM><!-- Reference end -->.</P></DD></DL>
+<DL>
+  <DT><A id=label:91 name=label:91><CODE>OptionParser#new</CODE></A><!-- RDLabel: "OptionParser#new" --> 
+
+  <DD>
+  <P>Pushes a new <CODE>List</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:92 name=label:92><CODE>OptionParser#remove</CODE></A><!-- RDLabel: "OptionParser#remove" --> 
+
+  <DD>
+  <P>Removes the last <CODE>List</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:93 name=label:93><CODE>OptionParser#summarize(<VAR>to</VAR> = 
+  [], <VAR>width</VAR> = @<VAR>summary_width</VAR>, <VAR>max</VAR> = 
+  <VAR>width</VAR> - <VAR>1</VAR>, <VAR>indent</VAR> = 
+  @<VAR>summary_indent</VAR>)</CODE></A><!-- RDLabel: "OptionParser#summarize" --> 
+
+  <DD>
+  <P>Puts option summary into <VAR>to</VAR>, and returns <VAR>to</VAR>.</P>
+  <DL>
+    <DT><A id=label:94 name=label:94>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:95 name=label:95><VAR>to</VAR> </A><!-- RDLabel: "to
+" -->
+      <DD>
+      <P>output destination, which must have method <VAR>&lt;&lt;</VAR>. 
+      Defaulted to <CODE>[]</CODE>.</P>
+      <DT><A id=label:96 name=label:96><VAR>width</VAR> </A><!-- RDLabel: "width
+" -->
+      <DD>
+      <P>width of left side. Defaulted to <VAR>@summary_width</VAR></P>
+      <DT><A id=label:97 name=label:97><VAR>max</VAR> </A><!-- RDLabel: "max
+" -->
+      <DD>
+      <P>maximum length allowed for left side. Defaulted to 
+      <CODE><VAR>width</VAR> - 1</CODE></P>
+      <DT><A id=label:98 name=label:98><VAR>indent</VAR> </A><!-- RDLabel: "indent
+" -->
+      <DD>
+      <P>indentation. Defaulted to <VAR>@summary_indent</VAR></P>
+      <DT><A id=label:99 name=label:99><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P>yields with each line if called as 
+iterator.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:100 name=label:100><CODE>OptionParser#to_str</CODE></A><!-- RDLabel: "OptionParser#to_str" --> 
+
+  <DT><A id=label:101 name=label:101><CODE>OptionParser#to_s</CODE></A><!-- RDLabel: "OptionParser#to_s" --> 
+
+  <DD>
+  <P>Returns option summary string.</P></DD></DL>
+<DL>
+  <DT><A id=label:102 name=label:102><CODE>OptionParser#to_a</CODE></A><!-- RDLabel: "OptionParser#to_a" --> 
+
+  <DD>
+  <P>Returns option summary list.</P></DD></DL>
+<DL>
+  <DT><A id=label:103 name=label:103><CODE>OptionParser#switch</CODE></A><!-- RDLabel: "OptionParser#switch" --> 
+
+  <DD>
+  <P>Creates <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:4">OptionParser::Switch</A>.</P>
+  <DL>
+    <DT><A id=label:104 name=label:104>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:105 name=label:105><VAR>*opts</VAR> </A><!-- RDLabel: "*opts
+" -->
+      <DD>
+      <P>option definition:</P>
+      <DL>
+        <DT><A id=label:106 name=label:106>argument style </A><!-- RDLabel: "argument style
+" -->
+        <DD>
+        <P>see <A 
+        href="http://www.learningruby.com/optparsedocumentation.html#label:43">OptionParser::ArgumentStyle</A></P>
+        <DT><A id=label:107 name=label:107>argument pattern </A><!-- RDLabel: "argument pattern
+" -->
+        <DD>
+        <P>acceptable option argument format, must pre-defined with <A 
+        href="http://www.learningruby.com/optparsedocumentation.html#label:65">OptionParser.accept</A> 
+        or <A 
+        href="http://www.learningruby.com/optparsedocumentation.html#label:66">OptionParser#accept</A>, 
+        or <CODE>Regexp</CODE>. This can appear once or assigned as 
+        <CODE>String</CODE> if not present, otherwise causes exception 
+        <CODE>ArgumentError</CODE>.</P>
+        <P>cf. <A 
+        href="http://www.learningruby.com/optparsedocumentation.html#label:137">Acceptable 
+        argument classes</A>.</P>
+        <DT><A id=label:108 name=label:108>Hash </A><!-- RDLabel: "Hash
+" -->
+        <DT><A id=label:109 name=label:109>Array </A><!-- RDLabel: "Array
+" -->
+        <DD>
+        <P>possible argument values.</P>
+        <DT><A id=label:110 name=label:110>Proc </A><!-- RDLabel: "Proc
+" -->
+        <DT><A id=label:111 name=label:111>Method </A><!-- RDLabel: "Method
+" -->
+        <DD>
+        <P>alternative way to give the <EM>handler</EM>.</P>
+        <DT><A id=label:112 name=label:112>"--switch=MANDATORY", 
+        "--switch[=OPTIONAL]", "--switch" </A><!-- RDLabel: ""&shy;&shy;switch=MANDATORY", "&shy;&shy;switch[=OPTIONAL]", "&shy;&shy;switch"
+" -->
+        <DD>
+        <P>specifies long style switch that takes <EM>mandatory</EM>, 
+        <EM>optional</EM> and <EM>no</EM> argument, respectively.</P>
+        <DT><A id=label:113 name=label:113>"-xMANDATORY", "-x[OPTIONAL]", "-x" 
+        </A><!-- RDLabel: ""-xMANDATORY", "-x[OPTIONAL]", "-x"
+" -->
+        <DD>
+        <P>specifies short style switch that takes <EM>mandatory</EM>, 
+        <EM>optional</EM> and <EM>no</EM> argument, respectively.</P>
+        <DT><A id=label:114 name=label:114>"-[a-z]MANDATORY", 
+        "-[a-z][OPTIONAL]", "-[a-z]" </A><!-- RDLabel: ""-[a-z]MANDATORY", "-[a-z][OPTIONAL]", "-[a-z]"
+" -->
+        <DD>
+        <P>special form short style switch that matches character range(not 
+        fullset of regular expression).</P>
+        <DT><A id=label:115 name=label:115>"=MANDATORY", "=[OPTIONAL]" </A><!-- RDLabel: ""=MANDATORY", "=[OPTIONAL]"
+" -->
+        <DD>
+        <P>argument style and description.</P>
+        <DT><A id=label:116 name=label:116>"description", ... </A><!-- RDLabel: ""description", ...
+" -->
+        <DD>
+        <P><EM>description</EM> for this option.</P></DD></DL>
+      <DT><A id=label:117 name=label:117><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P><EM>handler</EM> to convert option argument to arbitrary 
+      <CODE>Class</CODE>.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:118 name=label:118><CODE>OptionParser#on(*<VAR>opts</VAR>) 
+  [{...}]</CODE></A><!-- RDLabel: "OptionParser#on" --> 
+  <DT><A id=label:119 
+  name=label:119><CODE>OptionParser#def_option(*<VAR>opts</VAR>) 
+  [{...}]</CODE></A><!-- RDLabel: "OptionParser#def_option" --> 
+  <DT><A id=label:120 
+  name=label:120><CODE>OptionParser#on_head(*<VAR>opts</VAR>) [{...}]</CODE></A><!-- RDLabel: "OptionParser#on_head" --> 
+  <DT><A id=label:121 
+  name=label:121><CODE>OptionParser#def_head_option(*<VAR>opts</VAR>) 
+  [{...}]</CODE></A><!-- RDLabel: "OptionParser#def_head_option" --> 
+  <DT><A id=label:122 
+  name=label:122><CODE>OptionParser#on_tail(*<VAR>opts</VAR>) [{...}]</CODE></A><!-- RDLabel: "OptionParser#on_tail" --> 
+  <DT><A id=label:123 
+  name=label:123><CODE>OptionParser#def_tail_option(*<VAR>opts</VAR>) 
+  [{...}]</CODE></A><!-- RDLabel: "OptionParser#def_tail_option" --> 
+  <DD>
+  <P>Defines option switch and handler. <CODE>on_head</CODE>, 
+  <CODE>def_head_option</CODE> and <CODE>on_tail</CODE>, 
+  <CODE>def_tail_option</CODE> put the switch at head and tail of summary, 
+  respectively.</P>
+  <P>cf. <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:103">OptionParser#switch</A>.</P></DD></DL>
+<DL>
+  <DT><A id=label:124 name=label:124><CODE>OptionParser#order(*<VAR>argv</VAR>) 
+  [{...}]</CODE></A><!-- RDLabel: "OptionParser#order" --> 
+  <DT><A id=label:125 name=label:125><CODE>OptionParser#order!([<VAR>argv</VAR> 
+  = <VAR>ARGV</VAR>]) [{...}]</CODE></A><!-- RDLabel: "OptionParser#order!" --> 
+  <DD>
+  <P>Parses <VAR>argv</VAR> in order. When non-option argument encountered, 
+  yields it if called as iterator, otherwise terminates the parse process. 
+  Returns rest of <VAR>argv</VAR> left unparsed.</P>
+  <P><CODE>order!</CODE> takes argument array itself, and removes switches 
+  destructively. Defaults to parse <VAR>ARGV</VAR>.</P>
+  <DL>
+    <DT><A id=label:126 name=label:126>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:127 name=label:127><VAR>argv</VAR> </A><!-- RDLabel: "argv
+" -->
+      <DD>
+      <P>command line arguments to be parsed.</P>
+      <DT><A id=label:128 name=label:128><CODE>Block</CODE> </A><!-- RDLabel: "Block
+" -->
+      <DD>
+      <P>called with each non-option argument.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:129 
+  name=label:129><CODE>OptionParser#permute(*<VAR>argv</VAR>)</CODE></A><!-- RDLabel: "OptionParser#permute" --> 
+
+  <DT><A id=label:130 
+  name=label:130><CODE>OptionParser#permute!([<VAR>argv</VAR> = 
+  <VAR>ARGV</VAR>])</CODE></A><!-- RDLabel: "OptionParser#permute!" --> 
+  <DD>
+  <P>Parses <VAR>argv</VAR> in permutation mode, and returns list of non-option 
+  arguments.</P>
+  <P><CODE>permute!</CODE> takes argument array itself, and removes switches 
+  destructively. Defaults to parse <VAR>ARGV</VAR>.</P>
+  <DL>
+    <DT><A id=label:131 name=label:131>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:132 name=label:132><VAR>argv</VAR> </A><!-- RDLabel: "argv
+" -->
+      <DD>
+      <P>command line arguments to be parsed.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:133 
+  name=label:133><CODE>OptionParser#parse(*<VAR>argv</VAR>)</CODE></A><!-- RDLabel: "OptionParser#parse" --> 
+
+  <DT><A id=label:134 name=label:134><CODE>OptionParser#parse!([<VAR>argv</VAR> 
+  = <VAR>ARGV</VAR>])</CODE></A><!-- RDLabel: "OptionParser#parse!" --> 
+  <DD>
+  <P>Parses <VAR>argv</VAR> in order when environment variable 
+  <CODE>POSIXLY_CORRECT</CODE> is set, otherwise permutation mode</P>
+  <P><CODE>parse!</CODE> takes argument array itself, and removes switches 
+  destructively. Defaults to parse <VAR>ARGV</VAR>.</P>
+  <DL>
+    <DT><A id=label:135 name=label:135>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:136 name=label:136><VAR>argv</VAR> </A><!-- RDLabel: "argv
+" -->
+      <DD>
+      <P>command line arguments to be parsed.</P></DD></DL></DD></DL></DD></DL>
+<H1><A id=label:137 name=label:137>Acceptable argument classes</A></H1><!-- RDLabel: "Acceptable argument classes" -->
+<DL>
+  <DT><A id=label:138 name=label:138>Object </A><!-- RDLabel: "Object
+" -->
+  <DD>
+  <P>any string, and no conversion. this is fall-back.</P></DD></DL>
+<DL>
+  <DT><A id=label:139 name=label:139>String </A><!-- RDLabel: "String
+" -->
+  <DD>
+  <P>any none-empty string, and no conversion.</P></DD></DL>
+<DL>
+  <DT><A id=label:140 name=label:140>Integer </A><!-- RDLabel: "Integer
+" -->
+  <DD>
+  <P>Ruby/C-like integer, octal for <CODE>0-7</CODE> sequence, binary for 
+  <CODE>0b</CODE>, hexadecimal for <CODE>0x</CODE>, and decimal for others; with 
+  optional sign prefix. Converts to <CODE>Integer</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:141 name=label:141>Float </A><!-- RDLabel: "Float
+" -->
+  <DD>
+  <P>Float number format, and converts to <CODE>Float</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:142 name=label:142>Numeric </A><!-- RDLabel: "Numeric
+" -->
+  <DD>
+  <P>Generic numeric format, and converts to <CODE>Integer</CODE> for integer 
+  format, <CODE>Float</CODE> for float format.</P></DD></DL>
+<DL>
+  <DT><A id=label:143 name=label:143>OptionParser::DecimalInteger </A><!-- RDLabel: "OptionParser::DecimalInteger
+" -->
+  <DD>
+  <P>Decimal integer format, to be converted to 
+<CODE>Integer</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:144 name=label:144>OptionParser::OctalInteger </A><!-- RDLabel: "OptionParser::OctalInteger
+" -->
+  <DD>
+  <P>Ruby/C like octal/hexadecimal/binary integer format, to be converted to 
+  <CODE>Integer</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:145 name=label:145>OptionParser::DecimalNumeric </A><!-- RDLabel: "OptionParser::DecimalNumeric
+" -->
+  <DD>
+  <P>Decimal integer/float number format, to be converted to 
+  <CODE>Integer</CODE> for integer format, <CODE>Float</CODE> for float 
+  format.</P></DD></DL>
+<DL>
+  <DT><A id=label:146 name=label:146>TrueClass </A><!-- RDLabel: "TrueClass
+" -->
+  <DD>
+  <P>Boolean switch, which means whether it is present or not, whether it is 
+  absent or not with prefix <CODE>no-</CODE>, or it takes an argument 
+  <CODE>yes/no/true/false/+/-</CODE>.</P>
+  <DT><A id=label:147 name=label:147>FalseClass </A><!-- RDLabel: "FalseClass
+" -->
+  <DD>
+  <P>Similar to <!-- Reference, RDLabel "TrueClass" doesn't exist --><EM 
+  class=label-not-found>TrueClass</EM><!-- Reference end -->, but defaulted to 
+  <CODE>false</CODE>.</P></DD></DL>
+<DL>
+  <DT><A id=label:148 name=label:148>Array </A><!-- RDLabel: "Array
+" -->
+  <DD>
+  <P>List of strings separated by ","</P></DD></DL>
+<H1><A id=label:149 name=label:149>Exceptions</A></H1><!-- RDLabel: "Exceptions" -->
+<H2><A id=label:150 
+name=label:150><!-- Index, but conflict -->OptionParser::ParseError<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::ParseError" -->
+<P>Base class of exceptions from <A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:41">OptionParser</A></P>
+<H3><A id=label:151 name=label:151>Superclass</A></H3><!-- RDLabel: "Superclass" -->
+<P><CODE>RuntimeError</CODE></P>
+<H3><A id=label:152 name=label:152>Constants</A></H3><!-- RDLabel: "Constants" -->
+<DL>
+  <DT><A id=label:153 name=label:153>OptionParser::ParseError::Reason </A><!-- RDLabel: "OptionParser::ParseError::Reason
+" -->
+  <DD>
+  <P>Reason caused error.</P></DD></DL>
+<H3><A id=label:154 name=label:154>Instance methods</A></H3><!-- RDLabel: "Instance methods" -->
+<DL>
+  <DT><A id=label:155 
+  name=label:155><CODE>OptionParser::ParseError#recover(<VAR>argv</VAR>)</CODE></A><!-- RDLabel: "OptionParser::ParseError#recover" --> 
+
+  <DD>
+  <P>Push backs erred argument(s) to <VAR>argv</VAR>.</P>
+  <DT><A id=label:156 
+  name=label:156><CODE>OptionParser::ParseError#reason</CODE></A><!-- RDLabel: "OptionParser::ParseError#reason" --> 
+
+  <DD>
+  <P>Returns error reason. Override this to I18N.</P>
+  <DT><A id=label:157 
+  name=label:157><CODE>OptionParser::ParseError#inspect</CODE></A><!-- RDLabel: "OptionParser::ParseError#inspect" --> 
+
+  <DD>
+  <P>Returns inspection string.</P>
+  <DT><A id=label:158 
+  name=label:158><CODE>OptionParser::ParseError#message</CODE></A><!-- RDLabel: "OptionParser::ParseError#message" --> 
+
+  <DT><A id=label:159 
+  name=label:159><CODE>OptionParser::ParseError#to_s</CODE></A><!-- RDLabel: "OptionParser::ParseError#to_s" --> 
+
+  <DT><A id=label:160 
+  name=label:160><CODE>OptionParser::ParseError#to_str</CODE></A><!-- RDLabel: "OptionParser::ParseError#to_str" --> 
+
+  <DD>
+  <P>Default stringizing method to emit standard error message.</P></DD></DL>
+<H2><A id=label:161 
+name=label:161><!-- Index, but conflict -->OptionParser::AmbiguousOption<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::AmbiguousOption" -->
+<P>Raises when encountered ambiguously completable string.</P>
+<H3><A id=label:162 name=label:162>Superclass</A></H3><!-- RDLabel: "Superclass" -->
+<P><A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:150">OptionParser::ParseError</A></P>
+<H2><A id=label:163 
+name=label:163><!-- Index, but conflict -->OptionParser::NeedlessArgument<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::NeedlessArgument" -->
+<P>Raises when encountered argument for switch defined as which takes no 
+argument.</P>
+<H3><A id=label:164 name=label:164>Superclass</A></H3><!-- RDLabel: "Superclass" -->
+<P><A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:150">OptionParser::ParseError</A></P>
+<H2><A id=label:165 
+name=label:165><!-- Index, but conflict -->OptionParser::MissingArgument<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::MissingArgument" -->
+<P>Raises when no argument found for switch defined as which needs argument.</P>
+<H3><A id=label:166 name=label:166>Superclass</A></H3><!-- RDLabel: "Superclass" -->
+<P><A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:150">OptionParser::ParseError</A></P>
+<H2><A id=label:167 
+name=label:167><!-- Index, but conflict -->OptionParser::InvalidOption<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::InvalidOption" -->
+<P>Raises when undefined switch.</P>
+<H3><A id=label:168 name=label:168>Superclass</A></H3><!-- RDLabel: "Superclass" -->
+<P><A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:150">OptionParser::ParseError</A></P>
+<H2><A id=label:169 
+name=label:169><!-- Index, but conflict -->OptionParser::InvalidArgument<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::InvalidArgument" -->
+<P>Raises when the given argument does not match required format.</P>
+<H3><A id=label:170 name=label:170>Superclass</A></H3><!-- RDLabel: "Superclass" -->
+<P><A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:150">OptionParser::ParseError</A></P>
+<H2><A id=label:171 
+name=label:171><!-- Index, but conflict -->OptionParser::AmbiguousArgument<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::AmbiguousArgument" -->
+<P>Raises when the given argument word can't completed uniquely.</P>
+<H3><A id=label:172 name=label:172>Superclass</A></H3><!-- RDLabel: "Superclass" -->
+<P><A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:169">OptionParser::InvalidArgument</A></P>
+<H1><A id=label:173 name=label:173>Miscellaneous</A></H1><!-- RDLabel: "Miscellaneous" -->
+<H2><A id=label:174 
+name=label:174><!-- Index, but conflict -->OptionParser::Arguable<!-- Index end --></A></H2><!-- RDLabel: "OptionParser::Arguable" -->
+<P>Extends command line arguments array to parse itself.</P>
+<DL>
+  <DT><A id=label:175 
+  name=label:175><CODE>OptionParser::Arguable#options=(<VAR>opt</VAR>)</CODE></A><!-- RDLabel: "OptionParser::Arguable#options=" --> 
+
+  <DD>
+  <P>Sets <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:41">OptionParser</A> 
+  object, when <VAR>opt</VAR> is <CODE>false</CODE> or <CODE>nil</CODE>, methods 
+  <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:176">OptionParser::Arguable#options</A> 
+  and <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:175">OptionParser::Arguable#options=</A> 
+  are undefined. Thus, there is no ways to access the <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:41">OptionParser</A> 
+  object via the receiver object.</P></DD></DL>
+<DL>
+  <DT><A id=label:176 
+  name=label:176><CODE>OptionParser::Arguable#options</CODE></A><!-- RDLabel: "OptionParser::Arguable#options" --> 
+
+  <DD>
+  <P>Actual <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:41">OptionParser</A> 
+  object, automatically created if not yet.</P>
+  <P>If called as iterator, yields with the <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:41">OptionParser</A> 
+  object and returns the result of the block. In this case, rescues any <A 
+  href="http://www.learningruby.com/optparsedocumentation.html#label:150">OptionParser::ParseError</A> 
+  exceptions in the block, just emits error message to <!-- Reference, RDLabel "STDERR" doesn't exist --><EM 
+  class=label-not-found>STDERR</EM><!-- Reference end --> and returns 
+  <CODE>nil</CODE>.</P>
+  <DL>
+    <DT><A id=label:177 name=label:177>Parameters: </A><!-- RDLabel: "Parameters:
+" -->
+    <DD>
+    <DL>
+      <DT><A id=label:178 name=label:178><CODE>block</CODE> </A><!-- RDLabel: "block
+" -->
+      <DD>
+      <P>Yielded with the <A 
+      href="http://www.learningruby.com/optparsedocumentation.html#label:41">OptionParser</A> 
+      instance.</P></DD></DL></DD></DL></DD></DL>
+<DL>
+  <DT><A id=label:179 
+  name=label:179><CODE>OptionParser::Arguable#order!</CODE></A><!-- RDLabel: "OptionParser::Arguable#order!" --> 
+
+  <DT><A id=label:180 
+  name=label:180><CODE>OptionParser::Arguable#permute!</CODE></A><!-- RDLabel: "OptionParser::Arguable#permute!" --> 
+
+  <DT><A id=label:181 
+  name=label:181><CODE>OptionParser::Arguable#parse!</CODE></A><!-- RDLabel: "OptionParser::Arguable#parse!" --> 
+
+  <DD>
+  <P>Parses <VAR>self</VAR> destructively, and returns <VAR>self</VAR> just 
+  contains rest arguments left without parsed.</P></DD></DL>
+<H2><A id=label:182 name=label:182>OptionParser::Acceptables</A></H2><!-- RDLabel: "OptionParser::Acceptables" -->
+<P>Acceptable argument classes. Now contains <CODE>DecimalInteger</CODE>, 
+<CODE>OctalInteger</CODE> and <CODE>DecimalNumeric</CODE>. see <A 
+href="http://www.learningruby.com/optparsedocumentation.html#label:137">Acceptable 
+argument classes</A>.</P>
+<H1><A id=label:183 name=label:183>Example</A></H1><!-- RDLabel: "Example" --><PRE>#!/usr/bin/ruby -I.
+
+require 'optparse'
+require 'optparse/time'
+require 'pp'
+
+# keywords
+CODES = %w[iso-2022-jp shift_jis euc-jp utf8 binary]
+CODE_ALIASES = {"jis" =&gt; "iso-2022-jp", "sjis" =&gt; "shift_jis"}
+POSSIBLE_CODES = "(#{(CODES+CODE_ALIASES.keys).join(',')})"
+
+ARGV.options do
+  |opts|
+  opts.banner &lt;&lt; " argv..."
+
+  # separater
+  opts.on_tail
+  opts.on_tail("common options:")
+
+  # no argument, shows at tail
+  opts.on_tail("--help", "show this message") {puts opts; exit}
+
+  # mandatory argument
+  opts.on("-r", "--require=LIBRARY", String,
+	  "require the LIBRARY, before",
+	  "executing your script") {|@library|}
+
+  # optional argument
+  opts.on("-i", "--inplace=[EXTENSION]",
+	  "edit ARGV files in place", # multiline description
+	  "(make backup if EXTENSION supplied)") {|@inplace| @inplace ||= ''}
+
+  opts.on("-N=[NUM]", Integer) {|@number|}
+
+  # additional class
+  opts.on("-t", "--[no-]time[=TIME]", Time, "it's the time") {|@time|}
+
+  # limit argument syntax
+  opts.on("-[0-7]", "-F", "--irs=[OCTAL]", OptionParser::OctalInteger,
+	  "specify record separator", "(\\0, if no argument)") {|@irs|}
+
+  # boolean switch(default true)
+  @exec = true
+  opts.on("-n", "--no-exec[=FLAG]", TrueClass, "not really execute") {|@exec|}
+
+  # array
+  opts.on("-a", "--list[=LIST,LIST]", Array, "list") {|@list|}
+
+  # fixed size array
+  opts.on("--pair[=car,cdr]", Array, "pair") {|@x, @y|}
+
+  # keyword completion
+  opts.on("--code=CODE", CODES, CODE_ALIASES, "select coding system",
+	  "("+CODES.join(",")+",", " "+CODE_ALIASES.keys.join(",")+")") {|@code|}
+
+  # optional argument with keyword completion
+  opts.on("--type[=TYPE]", [:text, :binary], "select type(text, binary)") {|@type|}
+
+  # boolean switch with optional argument(default false)
+  opts.on("-v", "--[no-]verbose=[FLAG]", "run verbosely") {|@verbose|}
+
+  # easy way, set local variable
+  opts.on("-q", "--quit", "quit when ARGV is empty") {|@quit|}
+
+  # adding on the fly
+  opts.on("--add=SWITCH=[ARG]", "add option on the fly", /\A(\w+)(?:=.+)?\Z/) do
+    |opt, var|
+    opts.on("--#{opt}", "added in runtime", &amp;eval("proc {|@#{var}|}"))
+  end
+
+  opts.on_head("specific options:")
+
+  # no argument
+  opts.on_tail("--version", "show version") do
+    puts OptionParser::Version.join('.')
+    exit
+  end
+  opts.parse!
+end
+
+pp self
+(print ARGV.options; exit) if @quit
+ARGV.options = nil		# no more parse
+puts "ARGV = #{ARGV.join(' ')}" if !ARGV.empty?
+
+
+
+</PRE></BODY></HTML>

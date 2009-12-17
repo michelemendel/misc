@@ -1,0 +1,124 @@
+2001-12-01  <yoshi@giganet.net>
+
+	* patch for mswin32. (thanks patch: Nobuyuki Horie(ruby-talk:21179))
+
+        * patch for missing methods. (thanks patch: Takaaki Tateishi)
+
+        * release OpenGL module 0.32b
+
+2001-05-05  <yoshi@giganet.net>
+
+	* release OpenGL module 0.32a
+
+2001-04-30  Akinori MUSHA  <knu@iDaemons.org>
+
+	* extconf.rb: Use the better way to default X11 lib/header
+	directories to /usr/X11R6/{lib,include}.
+	
+2001-04-30  <yoshi@giganet.net>
+
+        * extconf.rb ogl.c glu.c: patch for cygwin environment.
+
+2001-04-24  Akinori MUSHA  <knu@iDaemons.org>
+
+	* glu.c: change errno to errorno to avoid the clash.
+
+	* extconf.rb: do dir_config("x11").
+
+2001-03-20    <yoshi@giganet.net>   
+        * release OpenGL module 0.32
+
+        * extconf.rb : patch for ruby 1.6.x
+
+        * extconf.rb : add site-install target
+
+2001-01-15    <yoshi@giganet.net>   
+        * ogl.c : fixed constant name
+
+2000-02-08    <yoshi@giganet.net>   
+        * release OpenGL module 0.31
+ 
+	* ogl.c : add some Version 1.2 function
+
+	* glu.c : add GLU 1.2 Tessellator function
+
+2000-01-06    <yoshi@giganet.net>
+	* ogl.c glu.c glut.c: include "windows.h"
+
+2000-01-01    <yoshi@giganet.net>
+	* ogl.c: glu_PickMatrix(): fixed use invalid argument bug
+
+1999-12-29    <yoshi@giganet.net>
+	* rbogl.c: add allocate_buffer_with_string()
+
+	* ogl.c: implement GL::FeedbackBuffer
+
+	* ogl.c: add OpenGL Array function
+
+	* sample: add some sample files
+
+	* glut.c: glut_CreateWindow(): uses $0 if not have argment
+
+1999-12-28    <yoshi@giganet.net>
+	* release OpenGL module 0.3
+
+	* ogl.c: gl_SelectBuffer() bug: allocate selection buffer size (thanks bug report:jkuro@gb3.so-net.ne.jp)
+
+	* add sample/select.rb(GL::SelectBuffer demo)
+
+	* glut.c: glut_Init(): use $0 and ARGV value
+
+	* extconf.rb: divide module opengl.so -> opengl.so and glut.so
+
+	* glu.c glut.c: rb_define_variable() -> rb_global_variable()
+
+	* ogl.c glu.c glut.c: remove some unreference local variable
+
+1999-12-25    <yashi@yashi.com>
+
+	* glu.c: fix_to_s -> rb_fix2str
+
+	* ogl.c: macro MAX is added. And max(), which I don't know where
+	it is defined, is changed to MAX()
+
+1999-12-18    <yashi@yashi.com>
+
+	* glu.c: as of Mesa 3.1, Mesa assumes all data NURBS object points
+	to is valid at gluEndSurface.  so, free them in glu_EndSurface()
+
+1999-12-17    <yashi@yashi.com>
+
+	* glu.c: Mesa-3.1 does not define GLU_TESS_ERROR9
+
+1999-12-14    <yashi@yashi.com>
+
+	* ogl.c: TRUE and FALSE was accidentally changed to Qtrue and
+	Qfalse by rename.rb: Fixed
+
+1999-12-13    <yashi@yashi.com>
+
+	* glu.c: used rename.rb to fix rest of old func.  surface.rb in
+	sample dir still doesn't work...
+
+	* glut.c: likewise
+
+	* ogl.c: likewise
+
+	* rbogl.c: likewise
+
+1999-12-12    <yashi@yashi.com>
+
+	* rbogl.c: [ruby-ext: 704] if you read japanese.
+	- changed to rb_()
+	- uses xmalloc instead of regular malloc
+	- pthread support in extconf
+	- (mary2ary) first arg casted with VALUE
+
+	* ogl.c: likewise
+
+	* glut.c: likewise
+
+	* glu.c: likewise
+
+	* extconf.rb: likewise
+

@@ -1,0 +1,11 @@
+interfaces across URLs, files, and strings. Ruby 1.7 introduces StringIO, 
+but I made the decision to factor ... modified and gzip handling. 
+A typical usage of the RSS parser would be: urls = ['http ...
+www.manicwave.com/blog/archives/000063.html 
+More pages from www.manicwave.com  
+   
+manicwave: January 2003 Archives   
+... interfaces across URLs, files, and strings. Ruby 1.7 introduces StringIO, 
+but I made the decision to factor ... last-modified and gzip handling. 
+A typical usage of the RSS parser would be: urls = ...
+www.manicwave.com/blog/archives/2003_01.html  

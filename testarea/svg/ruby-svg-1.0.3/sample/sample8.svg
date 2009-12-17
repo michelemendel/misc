@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="4in" height="4in" viewBox="0 0 400 400">
+<script type="text/ecmascript"><![CDATA[
+    function myHover(filterName, opavalue) {
+        var filterOj  = document.getElementById('a1');
+        var opacityOj = document.getElementById('t1');
+        opacityOj.setAttribute("style", "opacity:" + opavalue);
+//      filterOj.setAttribute("filter", "url(#" + filterName + ")")
+    }
+
+]]></script>
+<a xlink:href="http://ruby-svg.sourceforge.jp/">
+<ellipse cx="90" cy="50" rx="30" ry="15" id="a1" style="fill: none; stroke: magenta; stroke-width: 8;" onmouseover="myHover('filter1', 1)" onmouseout="myHover('', 0.5)" />
+<text x="65" y="55" id="t1" style="opacity: 0.5;" onmouseover="myHover('filter1', 1)" onmouseout="myHover('', 0.5)">Ruby/SVG</text>
+</a>
+
+</svg>

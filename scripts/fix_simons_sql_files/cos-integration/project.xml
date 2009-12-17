@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project>
+  <extend>../cos-project.xml</extend>
+  <currentVersion>${cos_integration.version}</currentVersion>
+  
+  <dependencies>
+ 
+   <!-- COSMOS jars -->
+    <dependency>
+      <groupId>cosmos</groupId>
+      <artifactId>cosmos-core</artifactId>
+      <version>${cosmos.version}</version>
+      <properties>
+        <wovenfortest>true</wovenfortest>
+      </properties>
+    </dependency>
+    
+         
+    <dependency>
+      <groupId>cos</groupId>
+      <artifactId>cos-legacy</artifactId>
+      <version>${cos_legacy.version}</version>
+      <properties>
+        <wovenfortest>true</wovenfortest>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>cos</groupId>
+      <artifactId>cos-util</artifactId>
+      <version>${cos_util.version}</version>
+      <properties>
+        <wovenfortest>true</wovenfortest>
+      </properties>
+    </dependency>
+ 
+    
+ 
+ </dependencies>   
+    
+</project>

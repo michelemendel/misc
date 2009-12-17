@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="4in" height="4in" viewBox="0 0 400 400">
+<defs>
+<style type="text/css"><![CDATA[
+.item0 { fill: #DDDDDD; }
+.item1 { fill: #BBBBBB; }
+.item2 { fill: #999999; }
+.item3 { fill: #777777; }
+.item4 { fill: #555555; }
+.item5 { fill: #333333; }
+]]></style>
+</defs>
+<path d="M 200 200 L 200 50 A 150 150 0 0 1 346 167 z" class="item0" />
+<path d="M 200 200 L 346 167 A 150 150 0 0 1 271 332 z" class="item1" />
+<path d="M 200 200 L 271 332 A 150 150 0 0 1 95 307 z" class="item2" />
+<path d="M 200 200 L 95 307 A 150 150 0 0 1 52 173 z" class="item3" />
+<path d="M 200 200 L 52 173 A 150 150 0 0 1 134 64 z" class="item4" />
+<path d="M 200 200 L 134 64 A 150 150 0 0 1 200 50 z" class="item5" />
+<circle cx="200" cy="200" r="150" style="fill: none; stroke: black;" />
+</svg>

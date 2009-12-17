@@ -1,0 +1,19 @@
+
+http://net-ssh.rubyforge.org/
+
+    Callbacks
+    chapter-3.html#s5
+    
+    Channel Operations
+    chapter-3.html#s6
+    
+    Executing Commands
+    chapter-4.html
+    
+
+
+
+Error unsin Net::SSH - "pageant process not running"
+    http://ruby-talk.org/cgi-bin/scat.rb/ruby/ruby-talk/146539
+    or
+    http://forums.rubylandia.com/viewtopic.php?t=1890&sid=44f601cdd0037b65c53db83959a5395b

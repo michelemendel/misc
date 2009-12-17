@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>init_logdirs (Logs)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File rtail.rb, line 141</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">init_logdirs</span>(<span class="ruby-identifier">properties</span>)
+        <span class="ruby-identifier">sessions</span> = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">properties</span>))
+        <span class="ruby-ivar">@dirs</span> = []
+        
+        <span class="ruby-identifier">sessions</span>.<span class="ruby-identifier">each_key</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">session_name</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">session</span> = <span class="ruby-constant">Session</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session_name</span>, 
+                                  <span class="ruby-identifier">sessions</span>[<span class="ruby-identifier">session_name</span>][<span class="ruby-value str">&quot;host&quot;</span>], 
+                                  <span class="ruby-identifier">sessions</span>[<span class="ruby-identifier">session_name</span>][<span class="ruby-value str">&quot;un&quot;</span>], 
+                                  <span class="ruby-identifier">sessions</span>[<span class="ruby-identifier">session_name</span>][<span class="ruby-value str">&quot;pw&quot;</span>])
+            
+            <span class="ruby-identifier">sessions</span>[<span class="ruby-identifier">session_name</span>][<span class="ruby-value str">&quot;dirs&quot;</span>].<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">dir_name</span>, <span class="ruby-identifier">dir</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">key</span> = <span class="ruby-identifier">session_name</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;-&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">dir_name</span>
+                <span class="ruby-ivar">@dirs</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">dir_name</span>, <span class="ruby-identifier">session</span>, <span class="ruby-identifier">dir</span>)
+            }
+        }
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

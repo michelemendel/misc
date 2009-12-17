@@ -1,0 +1,8 @@
+<project xmlns:j="jelly:core"
+         xmlns:ant="jelly:ant"
+         xmlns:define="jelly:define"
+         xmlns:maven="jelly:maven">
+  
+    <goal name="--source-install"/>
+
+</project>

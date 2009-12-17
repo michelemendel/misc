@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4" relativePaths="false" type="J2EE_EJB_MODULE">
+  <component name="EjbModuleBuildComponent">
+    <setting name="EXPLODED_URL" value="file://" />
+    <setting name="EXPLODED_ENABLED" value="false" />
+    <setting name="JAR_URL" value="file://$MODULE_DIR$/target/cos-wrapper-order-20.0.0.jar" />
+    <setting name="JAR_ENABLED" value="true" />
+    <setting name="SYNC_EXPLODED_DIR" value="false" />
+    <setting name="BUILD_ON_FRAME_DEACTIVATION" value="false" />
+  </component>
+  <component name="EjbModuleProperties">
+    <deploymentDescriptor name="ejb-jar.xml" url="file://$MODULE_DIR$/src/ejb/META-INF/ejb-jar.xml" optional="false" version="2.x" />
+  </component>
+  <component name="ModuleRootManager" />
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <exclude-output />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/test-src/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target/test-report-copies" />
+      <excludeFolder url="file://$MODULE_DIR$/target/test-reports" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="gnu-regexp-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/gnu-regexp/jars/gnu-regexp-1.1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/gnu-regexp/src/gnu-regexp-1.1.4.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jconn2-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/sybase/jars/jconn2-5.5-EBF12435.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/sybase/src/jconn2-5.5-EBF12435.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="oro-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/oro/jars/oro-2.0.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/oro/src/oro-2.0.7.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="weblogic-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/weblogic/jars/weblogic-8.1-sp4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/weblogic/src/weblogic-8.1-sp4.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="log4j-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/log4j/jars/log4j-1.2.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/log4j/src/log4j-1.2.8.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dbunit-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/dbunit/jars/dbunit-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/dbunit/src/dbunit-2.1.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mockejb-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/mockejb/jars/mockejb-0.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/mockejb/src/mockejb-0.5.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="cos-cos-wrapper-core" />
+    <orderEntry type="module" module-name="cos-cos-test-core" />
+    <orderEntry type="module-library">
+      <library name="cosmos-core-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/cosmos/woven.jars/cosmos-core-20.0.0.woven.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/cosmos/src/cosmos-core-20.0.0.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="cos-cos-legacy" />
+    <orderEntry type="module" module-name="cos-cos-util" />
+    <orderEntry type="module-library">
+      <library name="mockobjects-core-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/mockobjects/jars/mockobjects-core-0.09.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/mockobjects/src/mockobjects-core-0.09.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aspectjtools-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/aspectj/jars/aspectjtools-1.5.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/aspectj/src/aspectjtools-1.5.0.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aspectjrt-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/aspectj/jars/aspectjrt-1.5.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/aspectj/src/aspectjrt-1.5.0.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/junit/jars/junit-3.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/junit/src/junit-3.8.1.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/commons-logging/jars/commons-logging-1.0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/commons-logging/src/commons-logging-1.0.4.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="comet-test-mock-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/comet/jars/comet-test-mock-1.0.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/comet/src/comet-test-mock-1.0.10.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="surrogate-core-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/surrogate/jars/surrogate-core-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/surrogate/src/surrogate-core-1.0.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cobertura-woven">
+        <CLASSES>
+          <root url="jar://C:/Documents and Settings/t538714/.maven/repository/cobertura/jars/cobertura-1.6-cos.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:\Documents and Settings\t538714/.maven/repository/cobertura/src/cobertura-1.6-cos.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntryProperties />
+  </component>
+  <component name="WLEjbModuleProperties">
+    <option name="IS_RUN_APPC" value="true" />
+  </component>
+</module>
+

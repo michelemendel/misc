@@ -1,0 +1,18 @@
+## YAML Template.
+
+COS24bf:
+    query: COS24.0 Bugfix - all
+    sprints:
+        - 1 
+
+COS25:
+    query: COS25.0 (All Issues)
+    sprints: 
+        - 1
+        - 2
+
+COS26:
+    query: COS26.0 (All Issues)
+    sprints: 
+        - 1
+        - 2

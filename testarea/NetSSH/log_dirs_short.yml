@@ -1,0 +1,6 @@
+nupo:
+  host: ast-wt01
+  un: nupo
+  pw: nupo2005
+  dirs: 
+    nupo: /home/nupo/progs/jakarta-tomcat-5.0.25/logs/

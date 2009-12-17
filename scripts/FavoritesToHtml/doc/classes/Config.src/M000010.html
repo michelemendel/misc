@@ -1,0 +1,30 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>initParameters (Config)</title>
+<link rel=StyleSheet href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body bgcolor="white">
+<pre><span class="cmt"># File config.rb, line 6</span>
+        <span class="kw">def</span> initParameters
+                
+                <span class="cmt"># The Favorite Directory Root</span>
+        @root           = <span class="str">'C:\Documents and Settings\Default User\Favorites'</span>
+        <span class="cmt">#@root           = 'H:\FavData'</span>
+                
+                <span class="cmt"># Use relative or absolute paths</span>
+                @template       = <span class="str">'template1.html'</span>
+                @outputFile     = <span class="str">'favorites/Favorites.html'</span>
+                @treeTitle      = <span class="str">'My favorites'</span>
+        @htmlTitle      = <span class="str">&quot;Michele's Favorites&quot;</span>
+                
+                <span class="cmt"># This shouldn't be changed</span>
+                @dtreeJSFile    = <span class="str">'dtree/dtree.js'</span>
+        @dtreeCSSFile   = <span class="str">'dtree/dtree.css'</span>
+        @dtreeImgDir    = <span class="str">'dtree/img'</span>
+                
+        <span class="kw">end</span></pre>
+</body>
+</html>

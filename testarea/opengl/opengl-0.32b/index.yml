@@ -1,0 +1,9 @@
+dist_id: opengl
+version: 0.32b
+language: ruby
+description: ruby/OpenGL Interface module(includes OpenGL/GLU/GLUT Interface)
+categories: 
+  - Library/Graphics
+license: Ruby
+owner_id: YoshiyukiKusano
+wrapped_content: opengl/

@@ -1,0 +1,21 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>getImage (favorites.rb)</title>
+<link rel=StyleSheet href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body bgcolor="white">
+<pre><span class="cmt"># File favorites.rb, line 144</span>
+        <span class="kw">def</span> getImage(url, file)
+                out = File.new(file, <span class="str">&quot;wb&quot;</span>)
+                res = open(url)
+                puts res
+                <span class="cmt">#~ { |f| </span>
+                        <span class="cmt">#~ f.each_line {|line| out.print(line)} </span>
+                <span class="cmt">#~ }</span>
+                out.close
+        <span class="kw">end</span></pre>
+</body>
+</html>

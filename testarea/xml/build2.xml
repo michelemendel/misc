@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE DOCUMENT>
+
+
+<project name='cosport' default='compile' basedir='.'>
+
+  <property environment='env'/>
+
+
+  
+  <path id='base.class.path'>
+    <pathelement path='${env.BASE_CLASSPATH}'/>
+  </path>
+
+  
+  <path id='project.class.path'>
+    <pathelement PATH='${env.PROJECT_CLASSPATH}'/>
+  </path>
+
+  <property name='JAVA_COMPILER' value='modern'/> 
+  <property name='build.compiler' value='${JAVA_COMPILER}'/>
+  <property name='build.compiler.emacs' value='on'/>
+  <property name='MANIFEST' value='${env.DIST_DIR}/manifest.mf'/>
+
+  <property file='version.properties'/>
+  <property name='VERSION' value='${VERSION.MAJOR}.${VERSION.MINOR}'/>
+
+  
+  
+  
+  
+  
+  <taskdef name='ftp' classname='org.apache.tools.ant.taskdefs.optional.net.FTP'/>
+  <taskdef name='telnet' classname='org.apache.tools.ant.taskdefs.optional.net.TelnetTask'/>
+  <taskdef name='jlink' classname='org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask'/>
+
+  &build_codegen;
+  &build_wrapper;
+  &build_ejb;
+  &build_compile;
+  &build_config;
+  &build_doc;
+  &build_pvcs;
+  &build_develop;
+  &build_aspects;
+  &build_testdb;
+  &build_weblogic;
+  &build_junit;
+  &build_web_service;
+  &build_webapps;
+  &build_xmlbinding;
+
+
+  
+  
+  
+  <target name='prepare'>
+    <tstamp>
+        <format property='NOW' pattern='dd/MM-yyyy HH:mm'/>
+    </tstamp>
+    <echo message='Prepare build: ${PROJECT_DIR}'/>
+    <mkdir dir='${CLASSES_DIR}'/>
+    <mkdir dir='${SOURCE_DIR}'/>
+    <mkdir dir='${GEN_SOURCE_DIR}'/>
+    <mkdir dir='${PROJECT_DIR}/test'/>
+    <mkdir dir='${WEB_SOURCE_DIR}'/>
+    <mkdir dir='${TEST_DIR}'/>
+    <mkdir dir='${INT_TEST_DIR}'/>
+    <mkdir dir='${ETC_DIR}'/>
+    <mkdir dir='${PROJECT_DIR}/bin'/>
+    <mkdir dir='${PROJECT_DIR}/lib'/>
+    <mkdir dir='${PROJECT_DIR}/weblogic'/>
+  </target>
+
+  
+  
+  
+  <target depends='prepare, read_sequence_num' name='global_filter'>
+    <filterset id='project.filters'>
+      <filter token='VERSION' value='${VERSION}_${COSPORT_SEQUENCE}'/>
+      <filter token='PROJECT_NAME' value='${env.PROJECT_NAME}'/>
+      <filter token='NOW' value='${NOW}'/>
+      <filter token='DATE' value='${TODAY}'/>
+      <filter token='TIME' value='${TSTAMP}'/>
+    </filterset>
+  </target>
+
+  
+  
+  
+  <target depends='read_sequence_num' name='config' description='Prints CLASSPATH, SOURCEPATH and JAVA_COMPILER to the console'>
+    <echo>
+
+Config parameters for project '${env.PROJECT_NAME}':
+
+BUILD_CLASSPATH:
+${env.BUILD_CLASSPATH}
+
+RUN_CLASSPATH:
+${env.CLASSPATH}
+
+SOURCEPATH:
+${env.SOURCEPATH}
+
+COMPILER: ${build.compiler}
+
+PROJECT VERSION: ${VERSION}_${BUILD_SEQUENCE}
+
+    </echo>
+  </target>
+
+  
+  
+  
+  <target depends='read_sequence_num, global_filter' name='gen_manifest'>
+    <copy tofile='${MANIFEST}' overwrite='true' file='ant/etc/defaultManifest.mf'>
+      <filterset refid='project.filters'/>
+    </copy>
+  </target>
+
+
+  
+  
+  
+  <target depends='clean, clean_ejbs, clean_src, clean_doc' name='clean_all' description='Cleans up compiled files, genereated source, docs and ejbs [*]'>
+  </target>
+
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  <target depends='clean_full, build' name='rebuild' description='Full cleanup and rebuild'/>
+
+  
+  
+  
+  <target depends='gen_ejbs, gen_web_services, gen_webapps, gen_cosport_weblogic_jar' name='gen_deployables' description='Generates all deployables from compiled code'/>
+
+  
+  
+  
+  <target depends='gen_code, remove_surplus_classes, update, config_weblogic' name='build' description='Runs coscopy and then generates all files, beans, gen_cosport_client_jar, config_weblogic and deploys everything'/>
+
+  
+  
+  
+  <target depends='gen_services, compile' name='update' description='Compiles and deploys code changes, only bean code generation'/>
+
+  
+  
+  
+  <target depends='gen_deployables, deploy, config_weblogic' name='gen_deploy' description='Compiles and deploys code changes, only bean code generation'/>
+
+  
+  
+  
+  <target depends='gen_services, compile, gen_ejbs, gen_cosport_weblogic_jar_nohomeremote, deploy_ear' name='update_ear' description='Updates all changes into cosport.ear and deploys it.'/>
+
+  
+  
+  
+  <target depends='compilefile, gen_ejb, deploy_ear' name='quick_update_ear' description='Updates changes in an EJB (services) into cosport.ear and deploys it. Usage quick_update_ear :[pattern]'/>
+
+  
+  
+  
+  <target depends='compilefile, gen_ejb, deploy_ejbs' name='update_ejb' description='Builds and deploys an EJB(service). To be used when logic in bean is changed. Usage update_ejb :[pattern].'/>
+
+  
+  
+  
+  <target depends='gen_services, update_ejb' name='update_gen_ejb' description='Generates, builds and deploys an EJB(service). To be used when bean API is changed. Usage update_gen_ejb :[pattern].'/>
+
+  
+  
+  
+  <target depends='prepare' name='update_devenv_env' description='Gets devenv_env.zip from cc and unpacks it (all files except source and generated code)'>
+
+  	<copy tofile='build/devenv_env.zip' file='\\tna-fbu-02-7867\cosport\cos\build\devenv_env.zip'/>
+
+	  <echo message='Creating backup copies of any writable files found in &apos;ant, bin, lib, etc, weblogic&apos;...'/>
+		<movewriteablefiles toDir='ant.backup' fromDir='ant'/>
+		<movewriteablefiles toDir='bin.backup' fromDir='bin'/>
+		<movewriteablefiles toDir='etc.backup' fromDir='etc'/>
+		<movewriteablefiles toDir='lib.backup' fromDir='lib'/>
+		<movewriteablefiles toDir='weblogic.backup' fromDir='weblogic'/>
+
+	  <echo message='Copying &apos;project.properties&apos; file to &apos;project.properties.backup&apos;.'/>
+  	<copy tofile='project.properties.backup' file='project.properties'/>
+
+  	<echo message='Temporarily making all files writable in: &apos;ant, bin, lib, etc, weblogic, project.properties&apos;...'/>
+  	<exec dir='ant' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+  	<exec dir='bin' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+  	<exec dir='etc' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+  	<exec dir='lib' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+  	<exec dir='weblogic' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+  	<exec dir='.' executable='attrib.exe' os='Windows 2000'><arg line='-r project.properties'/></exec>
+
+  	<echo message='Unzipping misc development files (source files not included)...'/>
+  	<unzip dest='.' src='build/devenv_env.zip'/>
+
+  	<echo message='Making all files read only again in: &apos;ant, bin, lib, etc, weblogic, project.properties&apos;...'/>
+  	<exec dir='ant' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+  	<exec dir='bin' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+  	<exec dir='etc' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+  	<exec dir='lib' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+  	<exec dir='.' executable='attrib.exe' os='Windows 2000'><arg line='+r project.properties'/></exec>
+
+  </target>
+
+  
+  
+  
+  <taskdef name='movewriteablefiles' classname='com.telenor.ant.taskdefs.MoveWriteableFiles'/>
+
+  <target depends='prepare' name='update_devenv_code' description='Gets devenv_code.zip from cc and unpacks it (all source code and generated/compiled code)'>
+  	<copy tofile='build/devenv_code.zip' file='\\tna-fbu-02-7867\cosport\cos\build\devenv_code.zip'/>
+
+    
+      <mkdir dir='source'/>
+      <mkdir dir='${TEST_DIR}/source.java'/>
+      <mkdir dir='${TEST_DIR}/source.aspect'/>
+      <mkdir dir='${TEST_DIR}/source.xmlbinding'/>
+     <mkdir dir='${TEST_DIR}/sql'/>
+     <mkdir dir='${INT_TEST_DIR}/source.java'/>
+
+	<movewriteablefiles toDir='source.backup' fromDir='source'/>
+	<movewriteablefiles toDir='source.web.backup' fromDir='source.web'/>
+    <movewriteablefiles toDir='${TEST_DIR}/source.java.backup' fromDir='${TEST_DIR}/source.java'/>
+    <movewriteablefiles toDir='${TEST_DIR}/source.aspect.backup' fromDir='${TEST_DIR}/source.aspect'/>
+    <movewriteablefiles toDir='${TEST_DIR}/source.xmlbinding.backup' fromDir='${TEST_DIR}/source.xmlbinding'/>
+    <movewriteablefiles toDir='${TEST_DIR}/sql.backup' fromDir='${TEST_DIR}/sql'/>
+    <movewriteablefiles toDir='${INT_TEST_DIR}/source.java.backup' fromDir='${INT_TEST_DIR}/source.java'/>
+
+  	<echo message='Changes all source files under source, source.web, test.integration, and test to be writable!'/>
+  	<exec dir='source' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+  	<exec dir='source.web' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+    <exec dir='${TEST_DIR}/source.java' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+    <exec dir='${TEST_DIR}/source.aspect' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+    <exec dir='${TEST_DIR}/source.xmlbinding' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+    <exec dir='${TEST_DIR}/sql' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+    <exec dir='${INT_TEST_DIR}/source.java' executable='attrib.exe' os='Windows 2000'><arg line='-r /s'/></exec>
+
+  	<unzip dest='.' src='build/devenv_code.zip'/>
+
+  	<echo message='Changes all files under source, source.web, test.integration and test  to be read only!'/>
+  	<exec dir='source' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+  	<exec dir='source.web' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+    <exec dir='${TEST_DIR}/source.java' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+    <exec dir='${TEST_DIR}/source.aspect' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+    <exec dir='${TEST_DIR}/source.xmlbinding' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+    <exec dir='${TEST_DIR}/sql' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+    <exec dir='${INT_TEST_DIR}/source.java' executable='attrib.exe' os='Windows 2000'><arg line='+r /s'/></exec>
+
+  </target>
+
+</project>

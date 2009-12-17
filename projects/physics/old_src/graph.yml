@@ -1,0 +1,11 @@
+
+
+---
+node1:
+  id: 1
+  label: node1
+  x: 20
+  y: 30
+
+node2: { id: 2, label: node2, x: 20, y: 30 }
+

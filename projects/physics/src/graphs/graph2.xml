@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<GraphXML>
+    <graph>
+
+        <node name="first" mass="20">
+            <position x="-10.0" y="100.0"/>
+        </node>
+
+        <node name="second" mass="1">
+            <position x="10.0" y="-10.0"/>
+        </node>
+
+        <edge source="first" target="second" k="2" zfl="10.0" isDirected="false"/>
+
+    </graph>
+</GraphXML>

@@ -1,0 +1,16 @@
+nbproject
+
+log/*.log
+
+docs/**
+
+projects/Google/
+
+projects/aftenpostenDebatt/src/debatt/
+
+projects/physics/src/*.svg
+projects/physics/old_src/C-code.zip
+
+scripts/drumless/minusdrums/minus_music_previews/
+
+TheRubyWay
